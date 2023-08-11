@@ -1,38 +1,21 @@
-import { database } from "./database"
+import { database } from "/public/js/basket/database.js"
+localStorage.setItem("item",[database[0].name,15])
 
 let sum=0
-function addItem(){
-    item=localStorage.getItem("item")
-    nameItem=item.name
-    qualityItem=item.quality
-    for(let i=0;i<database.length;i++){
-        if (database[i].name==nameItem){
-            let priceItem=database[i].price
+function removeItem(nameItem){
+    let listItem=localStorage.getItem("item")
+
+    for(let i=0;i<listItem.length;i=i+2){
+        if(listItem[i].name == nameItem){
+            listItem[i].quality=0;
+            break;
         }
     }
-    document.getElementById("itemArea").innerHTML=`
-    <div class="d-flex flex-row justify-content-around p-3" id="item" >
-                    <div class="p-2" id="${nameItem}">${nameItem}</div>
-                    <div class="p-2">${qualityItem}</div>
-                    <div class="p-2">${priceItem}</div>
-                    <div class="p-2"><button type="button" class="btn-close" onclick="removeItem('${nameItem}')"></button></div>
-            </div>
-    `
+    document.getElementById(nameItem).innerHTML=``;
+
 }
-function sumItem(){
-    item=localStorage.getItem("item")
-    nameItem=item.name
-    qualityItem=item.quality
-    for(let i=0;i<database.length;i++){
-        if (database[i].name==nameItem){
-            sum+=database[i].price*qualityItem
-        }
-    }
-    document.getElementById("sum").innerHTML=sum
-}
-sumItem()
 function couponItem(couponCode){
-    subSum=sum
+    let subSum=sum
     if (couponCode == "GIAMGIA10"){
         subSum=sum*0.9
     }
@@ -44,6 +27,72 @@ function couponItem(couponCode){
     }
     document.getElementById("subSum").innerHTML=subSum
 }
-function removeItem(){
+function addItem(){
+    let priceItem
+    let item=localStorage.getItem("item");
+    let nameItem=[]
+    let qualityItem=0
+    qualityItem=separateItem(item,nameItem)
+    for(let i=0;i<database.length;i++){
+        if (database[i].name==nameItem[0]){
+            priceItem=database[i].price
+            break;
+        }
+    }
+    document.getElementById("itemArea").innerHTML +=`
+        <div id="${nameItem}">
+                    <div class="d-flex flex-row justify-content-around p-3" >
+                        <div class="p-2" >${nameItem}</div>
+                        <div class="p-2">${qualityItem}</div>
+                        <div class="p-2">${priceItem}</div>
+                        <div class="p-2"><button type="button" class="btn-close" onclick="removeItem('${nameItem}')"></button></div>
+                    </div>
+        </div>
+    `
+}
+addItem()
+function separateItem(item,nameItem){
+    let name=""
+    let quality=""
+    let i=0
+    while(i<item.length){
+        
+        if(item[i]== ","){
+            break;
+        }
+        name+=item[i]
+        i++;
+    }
+    i++
+    while(i<item.length){
+        if(item[i]==" "){
+            i++
+        }
+        else{
+            quality+=item[i]
+        i++
+        }
+
+    }
+    nameItem[0]=name
+    quality=parseInt(quality)
+    return quality
 
 }
+function sumItem(){
+    let priceItem
+    let item=localStorage.getItem("item");
+    let nameItem=[]
+    let qualityItem=0
+    qualityItem=separateItem(item,nameItem)
+    for(let i=0;i<database.length;i++){
+        if (database[i].name==nameItem){
+            sum+=database[i].price*qualityItem
+        }
+    }
+    document.getElementById("sum").innerHTML=sum
+    document.getElementById("subSum").style.display="none"
+}
+sumItem()
+
+
