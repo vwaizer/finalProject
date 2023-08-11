@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+.all {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.Navbar {
+    flex: 1.5;
+    border: 1px solid #ffff;
+    list-style-type: none;
+    height: 100%;
+    margin-left: 50px;
+}
+
+.NavItem {
+    height: 35px;
+    background-image: linear-gradient(to bottom,#f87ea7,#ec6da6);
+    color: #ffff;
+    padding-left: 10px;
+    padding-top: 7px;
+    font-weight: 200;
+    border: 1px solid #ffff;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.NavItemChild {
+    color: rgb(225, 88, 161);
+    background-color: #f9e9ef;
+    margin-top: -2px;
+
+    height: 40px;
+
+    border-top: 1.5px solid rgb(235, 181, 212);
+}
+
+.contain_header_item {
+    flex: 8;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+}
+
+.header_Item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 10px
+}
+
+.header {
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(to bottom,#f87ea7,#ec6da6);
+}
+
+/* .nav_Item_Click {
+    display: none;
+} */
+
+.name_Of_Nav {
+    font-weight: 600;
+    color: rgb(225, 88, 161);
+    font-size: 27px;
+    /* padding: 20px 40px; */
+}
+
+.select_product_price {
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0px 5px;
+    margin: auto;
+    border: 1px solid #ec6da6;
+    outline: none;
+    border-radius: none;
+
+}
+
+.arrange_products {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+}
+
+.containe_items {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    width: 230px;
+    height: 320px;
+    margin-bottom: 20px;
+    box-shadow: 8px 6px #f5d9df;
+    border: 1px solid #FFC0CB;
+}
+/* .item:hover{
+    
+} */
+.picture_item img{
+    width: 200px;
+    margin: 15px;
+}
+
+.list_Page {
+    list-style-type: none;
+    text-align: center;
+}
+
+.list_Page li {
+    display: inline-block;
+    background-image: linear-gradient(to bottom,#f87ea7,#ec6da6);
+    width: 30px;
+    margin: 5px;
+    height: 30px;
+    color: #FFFF;
+    padding-top: 5px;
+}
+
+
+
+footer {
+    background-image: linear-gradient(to bottom,#f87ea7,#ec6da6);
+    color: #ffffff;
+    height: 30px;
+    text-align: right;
+    padding: 5px 10px
+}
+.text{
+    font-size: 12px;
+    padding: 0px 15px;
+}
+.priceContain{
+    color: #d30000;
+    font-weight: bold;
+    text-align: center;
+}
