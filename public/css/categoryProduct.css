@@ -4,8 +4,9 @@
 
 .all {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     display: flex;
+    position: relative;
 }
 
 .Navbar {
@@ -18,7 +19,7 @@
 
 .NavItem {
     height: 35px;
-    background-image: linear-gradient(to bottom,#f87ea7,#ec6da6);
+    background-image: linear-gradient(to bottom,#f689ad,#ef84b4);
     color: #ffff;
     padding-left: 10px;
     padding-top: 7px;
@@ -30,7 +31,7 @@
 
 .NavItemChild {
     color: rgb(225, 88, 161);
-    background-color: #f9e9ef;
+    background-color: #fbf7f8;
     margin-top: -2px;
 
     height: 40px;
@@ -60,7 +61,7 @@
 .header {
     width: 100%;
     height: 40px;
-    background-image: linear-gradient(to bottom,#f87ea7,#ec6da6);
+    background-image: linear-gradient(to bottom,#f689ad,#ef84b4);
 }
 
 /* .nav_Item_Click {
@@ -69,12 +70,12 @@
 
 .name_Of_Nav {
     font-weight: 600;
-    color: rgb(225, 88, 161);
+    color: rgb(228, 102, 169);
     font-size: 27px;
     /* padding: 20px 40px; */
 }
 
-.select_product_price {
+#select_product_price {
     width: fit-content;
     height: 30px;
     display: flex;
@@ -100,6 +101,7 @@
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
+    padding-top: 20px;
     justify-content: space-around;
 }
 
@@ -109,10 +111,15 @@
     margin-bottom: 20px;
     box-shadow: 8px 6px #f5d9df;
     border: 1px solid #FFC0CB;
+ 
 }
 /* .item:hover{
     
 } */
+.name_item{
+    margin: 0px 10px;
+    font-size: 12px;
+}
 .picture_item img{
     width: 200px;
     margin: 15px;
@@ -136,16 +143,13 @@
 
 
 footer {
-    background-image: linear-gradient(to bottom,#f87ea7,#ec6da6);
+    background-image: linear-gradient(to bottom,#f689ad,#ef84b4);
     color: #ffffff;
     height: 30px;
     text-align: right;
     padding: 5px 10px
 }
-.text{
-    font-size: 12px;
-    padding: 0px 15px;
-}
+
 .priceContain{
     color: #d30000;
     font-weight: bold;
