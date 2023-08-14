@@ -36,8 +36,8 @@
         <div>
             <div class="all">
                 <div class="Navbar">
-                    <div class="NavItem">
-                        <li>Son</li>
+                    <div class="NavItem" id="Lipstick">
+                        <li >Son</li> 
                     </div>
                     <div id="lipNav" class="nav_Item_Click">
                         <div class="NavItemChild">
@@ -54,8 +54,8 @@
                         </div>
                     </div>
 
-                    <div class="NavItem">
-                        <li>Kem nền</li>
+                    <div class="NavItem" id="Foundation">
+                        <li >Kem nền</li>
                     </div>
                     <div id="FoundationNav" class="nav_Item_Click">
 
@@ -79,8 +79,8 @@
 
                     </div>
 
-                    <div class="NavItem">
-                        <li>Tẩy trang</li>
+                    <div class="NavItem" id="Cleanser">
+                        <li >Tẩy trang</li>
                     </div>
 
                     <div id="cleanserNav" class="nav_Item_Click">
@@ -105,16 +105,16 @@
                         </div>
                         <div class="arrange_products">
                             <span style=" margin: 0px 5px">Sắp xếp</span>
-                            <select id="select_product_price">
-                                <option id="optionIncrease" style="color: black;" value="1">Giá từ thấp đến cao </option>
-                                <option id="optionDown" style="color: black; " value="2">Giá từ cao đến thấp</option>
-                                <option style="display: none;" selected></option>
+                            <select id="select_product_price" >
+                                <option id="Increase" style="color: black;" value="Increase">Giá từ thấp đến cao </option>
+                                <option id="Down" style="color: black; " value="Down">Giá từ cao đến thấp</option>
+                                <option style="display: none;" value="0" selected></option>
                             </select>
                             <!-- <i class="fa-solid fa-angle-down"></i> -->
                         </div>
                     </div>
 
-                    <div  class="containe_items">
+                    <div class="product" >
 
                         <!-- <div class=" item">
                         <div class="picture_item">
@@ -154,8 +154,9 @@
 
 
 
-    <script src="/public/js/basket/categoryProduct.js"></script>
-    <script src="/public/js/basket/paging.js"></script>
+    <script type="module"  src="/public/js/basket/categoryProduct.js"></script>
+    <script type="module" src="/public/js/data.js"></script>
+    <!-- <script  src="/public/js/basket/paging.js"></script> -->
 </body>
 
 </html>

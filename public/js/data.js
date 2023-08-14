@@ -1,24 +1,27 @@
-export let productData = [
+export const productData = [
     {
+        id: 1,
         picture: "public/img/3CE Blur Matte Lipstick 4g.webp",
         category: 'Son Thỏi',
         nameProduct: 'Son Thỏi 3CE Blur Matte Lipstick 4g',
         price: '389,000',
     },
     {
+        id: 2,
         picture: 'public/img/FOCALLURE dạng lỏng kiểm soát dầu che lỗ chân lông tự nhiên 30g.jpg',
         category: 'Foundation',
         nameProduct: 'Kem Nền FOCALLURE Dạng Lỏng Kiểm Soát Dầu Che Lỗ Chân Lông 30g',
         price: '179,000'
     },
     {
+        id: 3,
         picture: "public/img/3CE Cloud Lip Tint.webp",
         category: 'Son Kem',
         nameProduct: 'Son Kem 3CE Cloud Lip Tint',
         price: '289,000'
     },
     {
-
+        id: 4,
         picture: "public/img/3CE Soft Matte.webp",
         category: 'Son Thỏi',
         nameProduct: 'Son Thỏi 3CE Soft Matte Lipstick Clear Layer Edition',
@@ -26,14 +29,13 @@ export let productData = [
 
     },
     {
-
+        id: 6,
         picture: 'public/img/3CE Velvet Lip Tint.webp',
         category: 'Son Kem',
         nameProduct: 'Son Kem 3CE Velvet Lip Tint',
         price: '289,000',
     },
     {
-
         picture: 'public/img/Espoir Pro Tailor Foundation Be Glow SPF25 PA++.webp',
         category: ' Foundation',
         nameProduct: 'Espoir Pro Tailor Foundation Be Glow SPF25 PA++',
@@ -208,3 +210,14 @@ export let productData = [
 
 
 ]
+
+
+
+
+
+
+
+
+
+
+
