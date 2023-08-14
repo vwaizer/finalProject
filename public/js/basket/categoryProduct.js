@@ -279,9 +279,8 @@ function Pages(){
 }
   
 // console.log(productData)
-
+let currentURL = window.location.href
 let selectPrice =document.getElementById('select_product_price')
-
 // Chuyển object trong mảng sang HTML
 let containeItems = document.querySelector('.product')
 function renderProductToHTML(array){
@@ -289,7 +288,9 @@ function renderProductToHTML(array){
     array.forEach(function (obj) { 
        
         let divItem = document.createElement('div')
+        divItem.setAttribute('data-index',obj.id)
         let divImg = document.createElement('div')
+        
         let divNameItem = document.createElement('div')
         let pNameProduct = document.createElement('p')
         let spanfullName = document.createElement('span')
@@ -320,12 +321,23 @@ function renderProductToHTML(array){
     })
     listProduct = document.querySelectorAll('.item');
     loadItem(); 
+    
 }
 renderProductToHTML(productData)
-
 selectPrice.addEventListener('change',function(){
     arrangePrice(productData)
 })
+
+let a = document.querySelectorAll('.item')
+console.log(a)
+for(let i=0;i<a.length;i++){
+    a[i].addEventListener('click',function(){
+        const id=a[i].dataset.index
+        const newURL = currentURL.replace(/\/[^\/]*$/,`/detail-and-information_Toan.html?id=${id}`)
+        console.log(a[i].dataset.index)
+        window.location.pathname = newURL;
+    })
+}
 
 // Sắp xếp sản phẩm theo giá 
 function arrangePrice (arr){
