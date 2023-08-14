@@ -1,31 +1,33 @@
-let database=localStorage.getItem("database")
-let sum=0
-// function removeItem(nameItem){
-//     let listItem=localStorage.getItem("item")
 
-//     for(let i=0;i<listItem.length;i=i+2){
-//         if(listItem[i].name == nameItem){
-//             listItem[i].quality=0;
-//             break;
-//         }
-//     }
-//     document.getElementById(nameItem).innerHTML=``;
 
-// }
- function saleFunction(){
+
+export function removeItem(nameItem){
+    let listItem=localStorage.getItem("item")
+
+    for(let i=0;i<listItem.length;i=i+2){
+        if(listItem[i].name == nameItem){
+            listItem[i].quality=0;
+            break;
+        }
+    }
+    document.getElementById(nameItem).innerHTML=``;
+
+}
+
+ export function saleFunction(){
             couponCode=document.getElementById("input")
             if(document.getElementById("input")==""){
 
             }
             else{
                 let subSum=sum
-            if (couponCode == "1"){
+            if (couponCode == "GIAMGIA1"){
                 subSum=sum*0.9
             }
-            else if(couponCode=="2"){
+            else if(couponCode=="GIAMGIA2"){
                 subSum=sum*0.8
             }
-            else if(couponCode=="3"){
+            else if(couponCode=="GIAMGIA3"){
                 subSum=sum*0.7
             }
             document.getElementById("subSum").style.display="flex"
@@ -35,25 +37,7 @@ let sum=0
             
         }
 
-function addItem(){
-    let priceItem
-    let item=localStorage.getItem("item");
-    let nameItem=[]
-    let qualityItem=0
-    qualityItem=separateItem(item,nameItem)
-    // for(let i=0;i<database.length;i++){
-    //     if (database[i].name==nameItem[0]){
-    //         priceItem=database[i].price
-    //         break;
-    //     }
-    // }
-    
-    // database.map(x =>{
-    //     if(x.name==nameItem[0]){
-    //         priceItem=x.price
-    //     }
-    // })
-    priceItem=15
+export function addItem(nameItem,qualityItem=1,priceItem){
     document.getElementById("itemArea").innerHTML +=`
         <div id="${nameItem}">
                     <div class="d-flex flex-row justify-content-around p-3" >
@@ -67,7 +51,7 @@ function addItem(){
 }
 
 
-function separateItem(item,nameItem){
+export function separateItem(item,nameItem){
     let name=""
     let quality=""
     let i=0
@@ -96,26 +80,11 @@ function separateItem(item,nameItem){
 
 }
 
-function sumItem(){
-    let priceItem
-    let item=localStorage.getItem("item");
-    let nameItem=[]
-    let qualityItem=0
-    qualityItem=separateItem(item,nameItem)
-    // for(let i=0;i<database.length;i++){
-    //     if (database[i].name==nameItem){
-    //         sum+=database[i].price*qualityItem
-    //     }
-    // }
-    // database.map((item)=>{
-    //     if(item.name==nameItem){
-    //         sum+=item.price*qualityItem
-    //     }
-    // })
+export function sumItem(){
+    
     document.getElementById("sum").innerHTML=sum
     document.getElementById("subSum").style.display="none"
+
 }
 
 
-addItem()
-sumItem()
