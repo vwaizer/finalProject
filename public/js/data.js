@@ -204,4 +204,7 @@ export let productData = [
         price: '349,000'
     }
 
+
+
+
 ]

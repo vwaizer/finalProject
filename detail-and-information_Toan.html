@@ -25,16 +25,16 @@
     <header id="heading">
       <ul class="nav justify-content-end" style="margin-right: 25px">
         <a href="#"
-          ><i
+          ><i id="user"
             class="fa-regular fa-user"
             style="margin-top: 13px; color: white"
           ></i
         ></a>
         <li class="nav-item">
-          <a
+          <a onclick="isItem()" id="dangnhap" target="_blank"
             class="nav-link active"
             aria-current="page"
-            href="#"
+            href="http://127.0.0.1:5501/lesson10-2_login.html"
             style="color: white"
             >Login</a
           >
@@ -69,18 +69,23 @@
     </header>
     <div id="container">
       <div id="leftbox">
-        <div id="itemleftbox">
-
+        <div id="leftbox1">
+          
         </div>
       </div>
       <div id="rightbox">
-        
+        <div id="rightbox1">
+
+        </div>
+        <div id="rightbox2">
+
+        </div>
       </div>
     </div>
     <div id="addtocart">
       <i class="fa-solid fa-basket-shopping" style="color: greenyellow; margin-top: 10px; margin-right: 15px;"></i>
       <a href="#"
-        ><button type="button" class="btn btn-outline-success">
+        ><button id="click" onclick="clickButton()" type="button" class="btn btn-outline-success">
           Thêm vào giỏ hàng
         </button></a
       >
@@ -100,5 +105,4 @@
     </footer>
     <script src="../finalProject/public/js/basket/detail.js" type="module"></script>
   </body>
-
 </html>
