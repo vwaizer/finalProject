@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4cc7250a7a.js"></script>
+    <link rel="stylesheet" href="public/css/detail-and-information.css" />
+   
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    
+  </head>
+
+  <body>
+    <header id="heading">
+      <ul class="nav justify-content-end" style="margin-right: 25px">
+        <a href="#"
+          ><i id="user"
+            class="fa-regular fa-user"
+            style="margin-top: 13px; color: white"
+          ></i
+        ></a>
+        <li class="nav-item">
+          <a onclick="isItem()" id="dangnhap" target="_blank"
+            class="nav-link active"
+            aria-current="page"
+            href="http://127.0.0.1:5501/lesson10-2_login.html"
+            style="color: white"
+            >Login</a
+          >
+        </li>
+        <a target="blank" href="#"
+          ><i
+            class="fa-solid fa-cart-shopping"
+            style="color: white; margin-top: 13px"
+          ></i
+        ></a>
+      </ul>
+      <a class="navbar-brand" href="#" id="logo">
+        <img src="https://i.pinimg.com/originals/a0/36/86/a03686d0ade36f49cd08b34f77140efc.png" width="300" />
+      </a>
+      <ul class="nav" id="menu">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="#"
+            style="color: white"
+            >Trang Chủ</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white">Giới thiệu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white">Liên hệ</a>
+        </li>
+      </ul>
+    </header>
+    <div id="container">
+      <div id="leftbox">
+        <div id="leftbox1">
+          
+        </div>
+      </div>
+      <div id="rightbox">
+        <div id="rightbox1">
+
+        </div>
+        <div id="rightbox2">
+
+        </div>
+      </div>
+    </div>
+    <div id="addtocart">
+      <i class="fa-solid fa-basket-shopping" style="color: greenyellow; margin-top: 10px; margin-right: 15px;"></i>
+      <a href="#"
+        ><button id="click" onclick="clickButton()" type="button" class="btn btn-outline-success">
+          Thêm vào giỏ hàng
+        </button></a
+      >
+    </div>
+    <div id="container3">
+      <div id="detail">
+
+      </div>
+      <div id="information">
+
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="text-end">
+        <div class="card-footer text-body-secondary">information</div>
+      </div>
+    </footer>
+    <script src="../finalProject/public/js/basket/detail.js" type="module"></script>
+  </body>
+</html>
