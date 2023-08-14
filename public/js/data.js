@@ -349,9 +349,9 @@ export const productData = [
     {
         id: 43,
         class: 'Foundation',
-        picture: "public/img/ROHTO SUGAO AIR FIT CC CREAM PINK BRIGHT PURE OCHRE SPF23 PA++.png",
+        picture: "public/img/Kem Nền Rotho Sugao Air Fit CC Cream.jpg",
         category: 'CC Cream',
-        nameProduct: "Kem Nền ROHTO SUGAO AIR FIT CC CREAM PINK BRIGHT PURE OCHRE SPF23 PA++",
+        nameProduct: "Kem Nền Rotho Sugao Air Fit CC Cream SPF23 PA++",
         price: '250,000' 
     },
     {
@@ -448,7 +448,7 @@ export const productData = [
         class: 'Cleanser',
         picture: "public/img/Nước Tẩy Trang Dành Cho Da Dầu Compliment Micellar Water Active 400ml.webp",
         category: 'Water Cleanser',
-        nameProduct: "Nước Tẩy Trang Dành Cho Da Dầu Compliment Micellar Water Active 400ml",
+        nameProduct: "Nước Tẩy Trang Compliment Micellar Water Active 400ml",
         price: '115,000'
     },
     {
