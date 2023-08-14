@@ -14,8 +14,10 @@ export function removeItem(nameItem){
 
 }
 
- export function saleFunction(){
-            couponCode=document.getElementById("input")
+ export function saleFunction(sum){
+            
+            let couponCode=document.getElementById("input").value
+           
             if(document.getElementById("input")==""){
 
             }
@@ -30,6 +32,7 @@ export function removeItem(nameItem){
             else if(couponCode=="GIAMGIA3"){
                 subSum=sum*0.7
             }
+            
             document.getElementById("subSum").style.display="flex"
             document.getElementById("sum").style.textDecoration="line-through"
             document.getElementById("subSum").innerHTML=subSum
@@ -38,7 +41,7 @@ export function removeItem(nameItem){
         }
 
 export function addItem(nameItem,qualityItem=1,priceItem){
-    
+
     document.getElementById("itemArea").innerHTML +=`
         <div id="${nameItem}">
                     <div class="d-flex flex-row justify-content-around p-3" >
@@ -81,10 +84,13 @@ export function separateItem(item,nameItem){
 
 }
 
-export function sumItem(){
+export function sumItem(qualityItem,priceItem){
+    let sum=0
+    sum+=parseInt(qualityItem)*parseInt(priceItem)
 
     document.getElementById("sum").innerHTML=sum
     document.getElementById("subSum").style.display="none"
+    return sum
 
 }
 
