@@ -85,7 +85,7 @@ export const productData = [
         class: 'Foundation',
         picture: "public/img/Transino Whitening CC Cream.jpg",
         category: 'CC Cream',
-        nameProduct: "Kem Nền Transino Whitening CC Cream",
+        nameProduct: "Transino Whitening CC Cream",
         price: '700,000' 
     },
     {
@@ -368,7 +368,7 @@ export const productData = [
         class: 'Cleanser',
         picture: "public/img/Nước Tẩy Trang Dưỡng Ẩm Momotani White Moisture Clear Cleansung Lotion.webp",
         category: 'Water Cleanser',
-        nameProduct: "Nước Tẩy Trang Dưỡng Ẩm Momotani White Moisture Clear Cleansung Lotion",
+        nameProduct: "Nước Tẩy Trang Momotani White Moisture Clear Cleansung Lotion",
         price: '250,000'
     },
     {
@@ -376,7 +376,7 @@ export const productData = [
         class: 'Cleanser',
         picture: "public/img/Nước Tẩy Trang Phục Hồi Cho Da Nhạy Cảm Pretty Skin B5 Cleansing Water 500ml.webp",
         category: 'Water Cleanser',
-        nameProduct: "Nước Tẩy Trang Phục Hồi Cho Da Nhạy Cảm Pretty Skin B5 Cleansing Water 500ml",
+        nameProduct: "Nước Tẩy Trang Cho Da Nhạy Cảm Pretty Skin B5 Cleansing Water 500ml",
         price: '209,000'
     },
     {
@@ -392,7 +392,7 @@ export const productData = [
         class: 'Cleanser',
         picture: "public/img/Nước Tẩy Trang Than Hoạt Tính Kirsh Blending Charcoal Micellar Cleansing Water.webp",
         category: 'Water Cleanser',
-        nameProduct: "Nước Tẩy Trang Than Hoạt Tính Kirsh Blending Charcoal Micellar Cleansing Water",
+        nameProduct: "Nước Tẩy Trang Than Hoạt Tính Kirsh Blending Charcoal Micellar ",
         price: '250,000'
     },
     {

@@ -14,14 +14,14 @@
     border: 1px solid #ffff;
     list-style-type: none;
     height: 100%;
-    margin-left: 50px;
+    margin-left: 60px;
 }
 
 .NavItem {
     height: 35px;
-    background-image: linear-gradient(to bottom,#f689ad,#ef84b4);
-    color: #ffff;
-    padding-left: 10px;
+    background-color: #FF779E;
+    /* background-image: linear-gradient(to bottom,#f689ad,#ef84b4); */
+    padding-left: 15px;
     padding-top: 7px;
     font-weight: 200;
     border: 1px solid #ffff;
@@ -30,13 +30,14 @@
 }
 
 .NavItemChild {
-    color: rgb(225, 88, 161);
-    background-color: #fbf7f8;
+    /* color: rgb(225, 88, 161); */
+    /* background-color: #fbf7f8; */
+    background-color: #feacc4;
     margin-top: -2px;
 
     height: 40px;
-
-    border-top: 1.5px solid rgb(235, 181, 212);
+    border: 1.5px solid #fdc5d6;
+    /* border-top: 1.5px solid rgb(235, 181, 212); */
 }
 
 .contain_header_item {
@@ -44,7 +45,7 @@
     height: fit-content;
     display: flex;
     flex-direction: column;
-    padding: 20px 50px;
+
 }
 
 .header_Item {
@@ -52,7 +53,7 @@
     justify-content: space-between;
 }
 
-.icon {
+.icon-header {
     display: flex;
     justify-content: space-between;
     padding: 19px 10px
@@ -61,16 +62,19 @@
 .header {
     width: 100%;
     height: 40px;
-    background-image: linear-gradient(to bottom,#f689ad,#ef84b4);
+    /* background-image: linear-gradient(to bottom,#f689ad,#ef84b4); */
+    background-color: #ef3167;
 }
 
 
 
 .name_Of_Nav {
     font-weight: 600;
-    color: rgb(228, 102, 169);
+    /* color: rgb(228, 102, 169); */
     font-size: 27px;
-    /* padding: 20px 40px; */
+    color: #f24374;
+    padding-left: 10px;
+    padding-top: 30px;
 }
 
 #select_product_price {
@@ -81,7 +85,7 @@
     align-items: center;
     padding: 0px 5px;
     margin: auto;
-    border: 1px solid #ec6da6;
+    border: 1px solid #ec4373;
     outline: none;
     border-radius: none;
 
@@ -92,6 +96,8 @@
     width: fit-content;
     height: fit-content;
     align-items: center;
+    padding-right: 10px;
+    padding-top: 35px;
 }
 
 .containe_items {
@@ -100,25 +106,29 @@
     height: 100%;
     flex-wrap: wrap;
     padding-top: 20px;
-    justify-content: space-around;
 }
 
 .item {
-    width: 230px;
+    width: 220px;
     height: 320px;
-    margin-bottom: 20px;
-    box-shadow: 8px 6px #f5d9df;
-    border: 1px solid #FFC0CB;
- 
+    margin-top: -6px;
+    margin-left: 13px;
+    margin-bottom: 15px;
+
+
+
 }
-/* .item:hover{
-    
-} */
-.name_item{
+
+.item:hover {
+    border: 1px solid #FFC0CB;
+}
+
+.name_item {
     margin: 0px 10px;
     font-size: 12px;
 }
-.picture_item img{
+
+.picture_item img {
     width: 200px;
     margin: 15px;
 }
@@ -130,7 +140,8 @@
 
 .list_Page li {
     display: inline-block;
-    background-image: linear-gradient(to bottom,#f87ea7,#ec6da6);
+    background-color: #FF779E;
+    /* background-image: linear-gradient(to bottom,#f87ea7,#ec6da6); */
     width: 30px;
     margin: 5px;
     height: 30px;
@@ -141,15 +152,46 @@
 
 
 footer {
-    background-image: linear-gradient(to bottom,#f689ad,#ef84b4);
+    background-color: #ef3167;
+    /* background-image: linear-gradient(to bottom,#f689ad,#ef84b4); */
     color: #ffffff;
     height: 30px;
     text-align: right;
     padding: 5px 10px
 }
 
-.priceContain{
+.priceContain {
     color: #d30000;
     font-weight: bold;
     text-align: center;
+}
+
+.icon-body {
+    position: fixed;
+    top: 32%;
+    left: 97%;
+    cursor: pointer;
+}
+
+.chatIcon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #ee3f62;
+    position: fixed;
+    top: 85%;
+    text-align: center;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.chatBox {
+    position: fixed;
+    top: 13%;
+    left: 10px;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    
 }

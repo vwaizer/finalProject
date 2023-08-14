@@ -22,7 +22,7 @@
     <div style=" display:flex;flex-direction:column">
         <div class="header">
 
-            <div class="icon">
+            <div class="icon-header">
                 <i class="fa-solid fa-arrow-left fa-xl" style="color: #ffffff; "></i>
 
                 <i class="fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;"></i>
@@ -37,44 +37,44 @@
             <div class="all">
                 <div class="Navbar">
                     <div class="NavItem" id="Lipstick">
-                        <li >Son</li> 
+                        <li>Son</li>
                     </div>
                     <div id="lipNav" class="nav_Item_Click">
                         <div class="NavItemChild">
                             <ul style="list-style-type: none;margin-top: 10px;">
-                                <li>Son kem</li>
+                                <li id="cream-lips">Son kem</li>
                         </div>
                         <div class="NavItemChild">
                             <ul style="list-style-type: none;margin-top: 10px;">
-                                <li>Son Thỏi</li>
+                                <li id="matte-lips">Son Thỏi</li>
                         </div>
                         <div class="NavItemChild">
                             <ul style="list-style-type: none;margin-top: 10px;">
-                                <li>Son Tint</li>
+                                <li id="tint-lips">Son Tint</li>
                         </div>
                     </div>
 
                     <div class="NavItem" id="Foundation">
-                        <li >Kem nền</li>
+                        <li>Kem nền</li>
                     </div>
                     <div id="FoundationNav" class="nav_Item_Click">
 
                         <div class="NavItemChild">
                             <ul style="list-style-type: none;margin-top: 10px;">
-                                <li>Foundation</li>
+                                <li id="foundation-child">Foundation</li>
                         </div>
 
                         <div class="NavItemChild">
                             <ul style="list-style-type: none;margin-top: 10px;">
-                                <li>Cushion</li>
+                                <li id="cushion">Cushion</li>
                         </div>
                         <div class="NavItemChild">
                             <ul style="list-style-type: none;margin-top: 10px;">
-                                <li>BB Cream </li>
+                                <li id="bb-cream">BB Cream </li>
                         </div>
                         <div class="NavItemChild">
                             <ul style="list-style-type: none;margin-top: 10px;">
-                                <li>CC Cream </li>
+                                <li id="cc-cream">CC Cream </li>
                         </div>
 
                     </div>
@@ -87,16 +87,16 @@
 
                         <div class="NavItemChild">
                             <ul style="list-style-type: none;margin-top: 10px;">
-                                <li>Nước tẩy trang </li>
+                                <li id="water-Cleanser">Nước tẩy trang </li>
                         </div>
                         <div class="NavItemChild" style="border-bottom: 1.5px solid rgb(235, 181, 212);">
                             <ul style="list-style-type: none;margin-top: 10px;">
-                                <li>Dầu tẩy trang </li>
+                                <li id="oil-Cleanser">Dầu tẩy trang </li>
                         </div>
 
                     </div>
                     <img src="https://img.pikbest.com/origin/08/95/92/47PpIkbEsTI8r.png!w700wp"
-                        style="width:180px;margin-top: 5px;">
+                        style="width:100%;margin-top: 1px;">
                 </div>
                 <div class="contain_header_item">
                     <div class="header_Item">
@@ -105,8 +105,9 @@
                         </div>
                         <div class="arrange_products">
                             <span style=" margin: 0px 5px">Sắp xếp</span>
-                            <select id="select_product_price" >
-                                <option id="Increase" style="color: black;" value="Increase">Giá từ thấp đến cao </option>
+                            <select id="select_product_price">
+                                <option id="Increase" style="color: black;" value="Increase">Giá từ thấp đến cao
+                                </option>
                                 <option id="Down" style="color: black; " value="Down">Giá từ cao đến thấp</option>
                                 <option style="display: none;" value="0" selected></option>
                             </select>
@@ -114,7 +115,8 @@
                         </div>
                     </div>
 
-                    <div class="product" >
+
+                    <div class="product">
 
                         <!-- <div class=" item">
                         <div class="picture_item">
@@ -135,28 +137,43 @@
                     <div>
                         <ul class="list_Page">
                             <li class="current">1</li>
-                            <li>2</li>
-                            <li>3</li>
                         </ul>
                     </div>
 
                 </div>
 
             </div>
+
+            
+                <div class="chatBox"></div>
+                
+                <div class="chatIcon">
+                    <i class="fa-solid fa-heart fa-2x" style="color: #ffffff; margin-top: 10px;">
+                        </i></div>
+                </div>
+            </div>
             <div>
                 <footer>jewghs</footer>
             </div>
         </div>
+       
+        <div class="icon-body">
+            <i class="fa-brands fa-square-facebook fa-3x" style="color: #133671;"></i>
+            <i class="fa-brands fa-square-instagram fa-3x" style="color: #C32AA3;"></i>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0MQcW8_wAiWrZRGO9PCCdIXtxShoFjIDv9rqNqrJ4QzvWdDRwhB5k8DHE0X12ZRAO9rA&usqp=CAU"
+            style="width: 37px;height: 37px;border-radius: 4px;margin-top: 3px;">
+            <img src="public/img/TaylorVersion-03.png"  style="width: 37px;height: 37px;border-radius: 4px;margin-top: 3px;background-color: #ef3167;">
+            <i class="fa-solid fa-circle-heart " style="color: #ee3f62;font-size: 3em;"></i>
+        </div>
+
+        
+        
 
 
-    </div>
 
-
-
-
-    <script type="module"  src="/public/js/basket/categoryProduct.js"></script>
-    <script type="module" src="/public/js/data.js"></script>
-    <!-- <script  src="/public/js/basket/paging.js"></script> -->
+        <script type="module" src="/public/js/basket/categoryProduct.js"></script>
+        <script type="module" src="/public/js/data.js"></script>
+        <!-- <script  src="/public/js/basket/paging.js"></script> -->
 </body>
 
 </html>
