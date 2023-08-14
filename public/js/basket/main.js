@@ -5,21 +5,25 @@ let sum=0
 var url = new URL(window.location.href);
 var list = url.searchParams.get("id");
 console.log(list)
-let qualityItem=1
-if(url.searchParams("quality"))
-{
-     qualityItem=url.searchParams.get("quality")
-    
-}
+let qualityItem=[]
 
 let nameItem=database.map(database =>database.nameProduct)
 let priceItem=database.map(database =>database.price)
 nameItem.forEach(element => {
     let index=nameItem.indexOf(element)
-    addItem(nameItem[index],qualityItem,priceItem[index])
-});
+    
+    if(url.searchParams("quality"))
+{
+     qualityItem.push(url.searchParams.get("quality"))   
+}
+    else{
+        qualityItem.push("1")
+    }
 
-addItem(nameItem,qualityItem,priceItem)
+    addItem(nameItem[index],qualityItem[index],priceItem[index])
+    
+})
+
 
 
 

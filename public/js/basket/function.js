@@ -38,6 +38,7 @@ export function removeItem(nameItem){
         }
 
 export function addItem(nameItem,qualityItem=1,priceItem){
+    
     document.getElementById("itemArea").innerHTML +=`
         <div id="${nameItem}">
                     <div class="d-flex flex-row justify-content-around p-3" >
@@ -81,7 +82,7 @@ export function separateItem(item,nameItem){
 }
 
 export function sumItem(){
-    
+
     document.getElementById("sum").innerHTML=sum
     document.getElementById("subSum").style.display="none"
 
