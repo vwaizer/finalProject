@@ -376,7 +376,7 @@ export const productData = [
         class: 'Cleanser',
         picture: "public/img/Nước Tẩy Trang Phục Hồi Cho Da Nhạy Cảm Pretty Skin B5 Cleansing Water 500ml.webp",
         category: 'Water Cleanser',
-        nameProduct: "Nước Tẩy Trang Cho Da Nhạy Cảm Pretty Skin B5 Cleansing Water 500ml",
+        nameProduct: "Nước Tẩy Trang Pretty Skin B5 Cleansing Water 500ml",
         price: '209,000'
     },
     {
