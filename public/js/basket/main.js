@@ -6,9 +6,11 @@ var url = new URL(window.location.href);
 var list = url.searchParams.get("id");
 console.log(list)
 let qualityItem=[]
-let sumTotal
+let sumTotal=0
+localStorage.setItem("sum",0)
 let nameItem=database.map(database =>database.nameProduct)
 let priceItem=database.map(database =>database.price)
+console.log(priceItem[0])
 nameItem.forEach(element => {
     let index=nameItem.indexOf(element)
     
@@ -23,6 +25,7 @@ nameItem.forEach(element => {
 
     addItem(nameItem[index],qualityItem[index],priceItem[index])
     sumTotal=sumItem(qualityItem[index],priceItem[index])
+    localStorage.setItem("sum",sumTotal)
     
 })
 
