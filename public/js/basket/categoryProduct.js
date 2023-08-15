@@ -38,11 +38,9 @@ function Pages(){
         if(i===currentPage){
             newPage.classList.add('current')
         }
-  
         document.querySelector('.list_Page').appendChild(newPage)
         i++
-    }
-    
+    }   
 }
   
 // console.log(productData)
@@ -63,7 +61,6 @@ function renderProductToHTML(array){
         })
         // divItem.setAttribute('data-index',obj.id)
         let divImg = document.createElement('div')
-        
         let divNameItem = document.createElement('div')
         let pNameProduct = document.createElement('p')
         let spanfullName = document.createElement('span')
@@ -75,9 +72,8 @@ function renderProductToHTML(array){
         divPriceContain.classList.add('priceContain')
         divImg.classList.add('picture_item')
         divItem.classList.add('item')
-    
         if (obj.nameProduct.length <= 35) {
-            spanfullName.innerHTML = ` ${obj.nameProduct}&nbsp <br><br>`
+            spanfullName.innerHTML = ` ${obj.nameProduct}&nbsp<br><br>`
         } else {
             spanfullName.innerHTML = obj.nameProduct
         }
@@ -161,8 +157,20 @@ const bbCream = document.getElementById('bb-cream')
 const ccCream = document.getElementById('cc-cream')
 const waterCleanser = document.getElementById('water-Cleanser')
 const oilCleanser = document.getElementById('oil-Cleanser')
-
-console.log(matteLips)
+const navItem = document.querySelectorAll('.NavItem li')
+const nameOfNav = document.querySelector('.name_Of_Nav')
+const headerName = document.querySelector('#headerName p')
+console.log(headerName.innerHTML)
+for(let i=0;i<navItem.length;i++){
+    navItem[i].addEventListener('click',function(){
+        nameOfNav.innerText=navItem[i].innerText
+        console.log(nameOfNav.innerText)
+    })
+}
+headerName.addEventListener('click',function(){
+    nameOfNav.innerHTML= headerName.innerHTML
+    renderProductToHTML(productData)
+})
 
 LipstickNav.addEventListener('click',function(){
     renderProductToHTML(lipstickList)

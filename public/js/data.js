@@ -12,7 +12,7 @@ export const productData = [
         class: 'Foundation',
         picture: 'public/img/FOCALLURE dạng lỏng kiểm soát dầu che lỗ chân lông tự nhiên 30g.jpg',
         category: 'Foundation',
-        nameProduct: 'Kem Nền FOCALLURE Dạng Lỏng Kiểm Soát Dầu Che Lỗ Chân Lông 30g',
+        nameProduct: 'Kem Nền FOCALLURE Kiểm Soát Dầu Che Lỗ Chân Lông 30g',
         price: '179,000'
     },
     {

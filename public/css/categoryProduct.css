@@ -34,11 +34,12 @@
     /* background-color: #fbf7f8; */
     background-color: #feacc4;
     margin-top: -2px;
-
+    cursor: pointer;
     height: 40px;
     border: 1.5px solid #fdc5d6;
     /* border-top: 1.5px solid rgb(235, 181, 212); */
 }
+
 
 .contain_header_item {
     flex: 8;
@@ -114,13 +115,11 @@
     margin-top: -6px;
     margin-left: 13px;
     margin-bottom: 15px;
-
-
-
 }
 
 .item:hover {
     border: 1px solid #FFC0CB;
+    cursor: pointer;
 }
 
 .name_item {
