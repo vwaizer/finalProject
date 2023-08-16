@@ -2,8 +2,15 @@
     box-sizing: border-box;
 }
 
+:root{
+    --pink: #ED5DB6;
+    --white: #fff;
+    --pink2: #eb008b;
+    
+}
+
 #heading{
-    background-color: #ED5DB6;
+    background-color: var(--pink);
 }
 
 #menu{
@@ -27,7 +34,6 @@
     align-items: center;
     background-color: aqua;
     width: 50%;
-    border: 2px solid yellowgreen;
     border-radius: 5px;
 }
 
@@ -67,6 +73,15 @@
     display: flex;
     justify-content: end;
 }
+
+#information{
+    background-color: #ED5DB6;
+}
+
+#detail{
+    background-color: red;
+}
+
 #footer{
     background-color: #ED5DB6;
 }
