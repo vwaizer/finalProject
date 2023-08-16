@@ -30,6 +30,7 @@ export const productData = [
         nameProduct: "Nước tẩy trang L'Oréal Paris 3 In 1 Micellar Water Duo",
         price: '159,000'
     },
+    
     {
         id: 6,
         class: 'Cleanser',

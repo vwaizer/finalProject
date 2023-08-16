@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="public/css/home_style.css">
-
+    <link rel="stylesheet" href="../public/css/home_style.css">
+    <link rel="stylesheet" href="../public/css/categoryProduct.css">
 </head>
 <body>
     <header>
@@ -77,21 +77,21 @@
         </div>
     </header>
     <div class="d-sm-flex flex-row justify-content-between p-2 container-sm">
-        <div id="basket" class="p-5 border rounded-2 ">
+        <div id="basket" class="p-5 border rounded-2 " style="background-color:#FF779E">
             <!-- <div class="d-flex flex-row justify-content-around p-3" id="item" >
                     <div class="p-2" id="son">name</div>
                     <div class="p-2">quality</div>
                     <div class="p-2">price</div>
                     <div class="p-2"><button type="button" class="btn-close" onclick="removeItem('son')"></button></div>
             </div> -->
-            <div id="itemArea">
+            <div id="itemArea" >
                 
             </div>
             
         </div>
 
         
-        <div id="payment" class="p-5 border rounded-2">
+        <div id="payment" class="p-5 border rounded-2" style="background-color:#FF779E">
                 <div class="w-100">
                     <div id="sum">sum</div>
                     <div id="subSum">subsum</div>
@@ -102,15 +102,18 @@
                     
                     <div class="p-2">
                         <div>
-                            <input type="text" id="input" class="container-sm">  
+                            <input type="text" id="input" class="container-sm border rounded-3 ">  
                         </div> 
                     </div>
-                    <button  type="button" id="button" class="p-2">
-                        coupon
-                    </button>
+                    <div >
+
+                        <button  type="button" id="button" class="p-2 border rounded-2 ">
+                            coupon
+                        </button>
+                    </div>
                 </div>
                 <br>
-                <button type="button" class="container" >Thanh toán</button>
+                <button type="button" class="container border rounded-2"  >Thanh toán</button>
         </div>
     </div>
         <br>
@@ -121,24 +124,26 @@
                     <b>TaylorVersion COSMETICS - THIÊN ĐƯỜNG MỸ PHẨM CHÍNH HÃNG TPHCM</b><br>
                     <span style="padding-top: 1vh;">Địa chỉ: </span><br>
 
-                        <b>CN1: </b><p>49 Trần Hưng Đạo, Phường Tân Thành, Quận Tân Phú</p>
-                        <b>CN2: </b><p>B.0012A Tòa Sarica Zone B- Khu Sala, Số 06 đường D9, P. An Lợi Đông, Quận 2, TP. Thủ Đức</p>
+                        <p> <span style="font-weight: bold;">CN1:</span> <span>49 Trần Hưng Đạo, Phường Tân Thành, Quận Tân Phú</span> </p>
+                        <p><span style="font-weight: bold;">CN2:</span> <span>B.0012A Tòa Sarica Zone B- Khu Sala, Số 06 đường D9, P. An Lợi Đông, Quận 2, TP. Thủ Đức</span> </p>
                     
 
                 </div>
-                <div style="width: 42vh;height: 100%; padding: 10px 15px;">
-                <b style="padding: 5.5vh;">CHĂM SÓC KHÁCH HÀNG</b>
-                <ul style="list-style-type: none;padding-top: 1vh;">
-                    <li>Giới thiệu</li>
-                <li>Chính sách đổi trả</li>
-                <li>Chính sách bảo mật</li>
-                <li>Chính sách thanh toán</li>
-                <li>Chính sách bảo hành</li>
-                <li>Hướng dẫn mua hàng</li>
-                <li>Điều khoản dịch vụ</li>
-                <li>Vận chuyển</li>
-                <li>Liên hệ hợp tác</li>
-                </ul>
+                <div style="width: 42vh;height: 100%; padding: 10px 15px;" class="container-sm">
+                <p style="font-weight: bold; margin: 0;">CHĂM SÓC KHÁCH HÀNG</p>
+                <div>
+                    <ul style="list-style-type: none;">
+                        <li>Giới thiệu</li>
+                    <li>Chính sách đổi trả</li>
+                    <li>Chính sách bảo mật</li>
+                    <li>Chính sách thanh toán</li>
+                    <li>Chính sách bảo hành</li>
+                    <li>Hướng dẫn mua hàng</li>
+                    <li>Điều khoản dịch vụ</li>
+                    <li>Vận chuyển</li>
+                    <li>Liên hệ hợp tác</li>
+                    </ul>
+                </div>
                 </div>
                 <div style="width: 42vh;height: 100%;padding: 10px 15px;">
                     <b>GIỜ MỞ CỬA</b><br>
@@ -154,11 +159,18 @@
             </div>
             <br>
             <br>
-                <div  class="container-fluid d-flex flex-row-reverse">
-                <footer   >COPYRIGHTS © 2021 BY TAYLORVERSION COSMETICS</footer>
+                <div  class="container-fluid d-flex flex-row-reverse " style="background-color: #ef3167;">
+                <footer >COPYRIGHTS © 2021 BY TAYLORVERSION COSMETICS</footer>
                 </div>
     </div>     
-        
+    <!-- <div class="icon-body container">
+        <i class="fa-brands fa-square-facebook fa-3x" style="color: #133671;"></i>
+        <i class="fa-brands fa-square-instagram fa-3x" style="color: #C32AA3;"></i>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0MQcW8_wAiWrZRGO9PCCdIXtxShoFjIDv9rqNqrJ4QzvWdDRwhB5k8DHE0X12ZRAO9rA&usqp=CAU"
+        style="width: 37px;height: 37px;border-radius: 4px;margin-top: 3px;">
+        <img src="./public/img/TaylorVersion-03.png"  style="width: 37px;height: 37px;border-radius: 4px;margin-top: 3px;background-color: #ef3167;">
+        <i class="fa-solid fa-circle-heart " style="color: #ee3f62;font-size: 3em;"></i>
+    </div> -->
     <script src="/public/js/basket/main.js" type="module"></script>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
