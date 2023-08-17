@@ -2,8 +2,8 @@ import {productData} from "/public/js/data.js"
 import {addItem,saleFunction,sumItem} from "/public/js/basket/function.js"
 
 let database=productData
-// var url = new URL(window.location.href);
-var url=new URL("http://www.example.com/edit.html?id=9&quality=5")
+var url = new URL(window.location.href);
+// var url=new URL("http://www.example.com/edit.html?id=9&quality=5")
 var list = url.searchParams.get("id");
 let listItem=[]
 var checkList=[]
