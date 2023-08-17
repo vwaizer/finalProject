@@ -126,7 +126,7 @@ body {
   }
   
   #tp {
-    display: flex; !important
+    display: flex !important;
     flex-direction: column;
     justify-content: space-between;
   }
