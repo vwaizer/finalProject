@@ -1,28 +1,23 @@
-import { productData } from "/finalProject/public/js/basket/database.js";
-let newUrl = "";
-let urlList = new URL(newUrl);
-let list = urlList.searchParams.get("id")
-console.log(list);
-const listProduct = productData.map(productData => productData.nameProduct)
-listProduct.forEach(element => {
-    if(list == element){
-        let indexList=listProduct.indexOf(list)
-        productData[indexList].picture
-    }
-});
-document.getElementById("leftbox1").innerHTML = listProduct;
-// console.log(listProduct)
+import { productData } from "/finalProject/public/js/basket/data.js";
 
-// function isItem(){
-//     let takeItem = localStorage.getItem("information")
-//     console.log(takeItem);
-//     if(takeItem){
-//         document.getElementById("dangnhap").style.display = "none";
-//         document.getElementById("user").style.display = "flex"
-//     }
-// }
-// isItem()
+
+let newUrl= window.location;
+console.log(newUrl);
+let url = new URL(newUrl);
+let search_param = url.searchParams;
+if(search_param.has("id")){
+    // console.log(search_param.get("id"));
+    const newId = Number(search_param.get("id"))
+    console.log(newId);
+    // console.log(id);
+    // console.log(newData);
+    const newData = productData.find(({ id }) => id === newId )
+    console.log(newData);
+    document.getElementById("leftbox").innerHTML=newData
+}
 
 
 
-
+// var url = window.location.pathname;
+// var id = url.substring(url.lastIndexOf('/') + 1);
+// console.log(id);

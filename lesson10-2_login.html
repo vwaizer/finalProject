@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Login</title>
+  </head>
+  <body>
+    <div id="username">
+      <span>Username</span>
+      <input id="newtext" type="Text" />
+    </div>
+    <br />
+    <div id="password">
+      <span>Password</span>
+      <input id="newpassword" type="password" />
+    </div>
+    <br />
+    <input id="submit" type="submit" />
+    <script>
+      let userName = document.getElementById("newtext");
+      let fisrtTex = "";
+      userName.addEventListener("change", function (e) {
+        fisrtTex = e.target.value;
+      });
+
+      let passWord = document.getElementById("newpassword");
+      let secondText = "";
+      passWord.addEventListener("change", function (e) {
+        secondText = e.target.value;
+      });
+
+      const backDoor = document.getElementById("submit");
+      backDoor.addEventListener("click", function (e) {
+        if (fisrtTex === "123" && secondText === "123") {
+          localStorage.setItem("information", true);
+          window.location.href="http://127.0.0.1:5500/finalProject/detail-and-information_Toan.html";
+        } else {
+          alert("Đăng nhập thất bại");
+        }
+      });
+    </script>
+  </body>
+</html>

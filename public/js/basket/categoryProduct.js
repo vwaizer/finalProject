@@ -57,7 +57,7 @@ function renderProductToHTML(array){
         divItem.addEventListener('click', function () {
             const id = obj.id;
             const newURL = currentURL.replace(/\/[^\/]*$/, `/detail-and-information_Toan.html?id=${id}`);
-            window.location.pathname = newURL;
+            window.location.href = newURL;
         })
         // divItem.setAttribute('data-index',obj.id)
         let divImg = document.createElement('div')
