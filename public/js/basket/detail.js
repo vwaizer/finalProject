@@ -9,8 +9,6 @@ if(search_param.has("id")){
     // console.log(search_param.get("id"));
     const newId = Number(search_param.get("id"))
     console.log(newId);
-    // console.log(id);
-    // console.log(newData);
     const newData = productData.find(({ id }) => id === newId )
     console.log(newData);
     document.getElementById("leftbox").innerHTML=newData
@@ -18,6 +16,12 @@ if(search_param.has("id")){
 
 
 
-// var url = window.location.pathname;
-// var id = url.substring(url.lastIndexOf('/') + 1);
-// console.log(id);
+function isItem(){
+    let takeItem = localStorage.getItem("information")
+    console.log(takeItem);
+    if(takeItem){
+        document.getElementById("dangnhap").style.display = "none";
+        document.getElementById("change").style.display = "flex"
+    }
+}
+isItem()
