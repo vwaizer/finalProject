@@ -6,6 +6,7 @@ export const productData = [
         category: 'Son Thỏi',
         nameProduct: 'Son Thỏi 3CE Blur Matte Lipstick 4g',
         price: '389,000',
+        information: ""
     },
     {
         id: 2,
