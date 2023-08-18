@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/home_style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -46,41 +46,32 @@
     </div>
     
     
-    <div class="container-fluid">
-
-        <div class="row" >
-            <div class="col-12" style="background-color: #F0F0F0; display: flex; justify-content: center;"> 
-            <nav class="navbar navbar-expand-lg" style="color: black; font-size: 20px;";>
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarText">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Giới thiệu</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sản Phẩm</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Liên Hệ</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        </div>
-    </div>
+    <div class="topnav" id="myTopnav" style="display: flex; justify-content: space-evenly; font-size:  30px;">
+        <a href="index.html">Trang chủ</a>
+        <a href="about.html">Giới Thiệu</a>
+        <a href="http://127.0.0.1:5500/CategoryProduct.html">Sản Phẩm</a>
+        <a href="#footer">Liên hệ</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+    
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+      
     
      <br>
-
+    
     <div class="container-fluid">
-
     <div class="row" >
         <div class="col-1"> </div>
         <div class="col-3" style=" display: flex; justify-content: center; flex-direction: column; margin-left: 20px;"> 
@@ -166,6 +157,7 @@
                 <script src="public/js/slide.js" ></script>
                 
         </div>
+        
         <div class="col-1"> </div>
         </div>
     </div>
@@ -178,26 +170,34 @@
         <div class="col-3" style="margin-left: 20px;"> 
         <img src="https://down-vn.img.susercontent.com/file/vn-50009109-2933d844660ea882e6d3a5e12e0a5284@resize_w1920_nl.webp" width="100%" height="100%" >
         </div>
-        <div class="col-7" >
+        <div class="col-7" id="tp">
         
-            <div id="tp">
+            
+            
             <div class="pick">
             <a href="#">
             <img src="https://i.pinimg.com/originals/9e/44/52/9e445252a0db27267aba0681fb81d7f6.jpg" width="100%" height="100%" >
             </a>
+            <span>Nước tẩy trang L'Oréal Paris 3 In 1 Micellar Water Duo </span>
+            <span style="font-weight: bold;">159,000 </span>
             </div>
+
 
             <div class="pick">
             <a href="#">
             <img src="https://i.pinimg.com/originals/c7/b7/8c/c7b78c381ef87b2920d9d36004ccf4df.jpg" width="100%" height="100%" >
             </a>
+            <span>Son Tint Blackrouge half n half water glow season 2 </span>
+            <span style="font-weight: bold;">169,000đ</span>
             </div>
 
             <div class="pick">
-                <a href="#">
-                <img src="https://i.pinimg.com/originals/dd/f5/95/ddf595850b74db323f8f6eec311d153e.jpg" width="100%" height="100%" >
-                </a>
-                </div>
+            <a href="#">
+            <img src="https://i.pinimg.com/originals/dd/f5/95/ddf595850b74db323f8f6eec311d153e.jpg" width="100%" height="100%" >
+            </a>
+            <span>Kem Nền FOCALLURE Kiểm Soát Dầu Che Lỗ Chân Lông 30g  </span>
+            <span style="font-weight: bold;">179,000đ</span>
+            </div>
        
         </div>
         </div>
@@ -205,36 +205,64 @@
         </div>
     </div>
     <br>
+    <div id="foot">
     <div class="container-fluid">
-        <div class="row" id="footer">
-        <div class="col-1"></div>   
-        <div class="col-4"> 
-            <span>Taylor's Version Keishohin Company Limited</span>
-            <br>
-            <span>MST: </span>
-            <br>
-            <span>Địa chỉ: 09 NTMK, P. Dakao, Quận 1, TP. HCM</span>
-            <br>
-            <span>Số điện thoại: 028 777 8889 </span>
-        </div>
-        <div class="col-3"> </div>
+        <div class="row">
+
+        <div class="col-1"></div>
+        <div class="col-3">
+            <b>TaylorVersion COSMETICS - THIÊN ĐƯỜNG MỸ PHẨM CHÍNH HÃNG TPHCM</b><br>
+            <span style="padding-top: 1vh;">Địa chỉ: </span><br>
+
+                <b>CN1: </b><p>49 Trần Hưng Đạo, Phường Tân Thành, Quận Tân Phú</p>
+                <b>CN2: </b><p>B.0012A Tòa Sarica Zone B- Khu Sala, Số 06 đường D9, P. An Lợi Đông, Quận 2, TP. Thủ Đức</p>
+        </div>   
+
         <div class="col-3"> 
-            <span>Thông tin liên hệ</span>
-            <br>
-            <span>Bộ phận chăm sóc khách hàng </span>
-            <br>
-            <span>Email: customer.service@taylorcosmetic.com</span>
-            <br>
-            <span>Số điện thoại: 028 777 8889 (EXT: 001) </span>
-
+            <b style="padding: 5.5vh;">CHĂM SÓC KHÁCH HÀNG</b>
+                    <ul style="list-style-type: none;padding-top: 1vh;">
+                        <li>Giới thiệu</li>
+                    <li>Chính sách đổi trả</li>
+                    <li>Chính sách bảo mật</li>
+                    <li>Chính sách thanh toán</li>
+                    <li>Chính sách bảo hành</li>
+                    <li>Hướng dẫn mua hàng</li>
+                    <li>Điều khoản dịch vụ</li>
+                    <li>Vận chuyển</li>
+                    <li>Liên hệ hợp tác</li>
+                    </ul>
         </div>
-        <div class="col-1"> </div>
 
+        <div class="col-3"> 
+                    <b>GIỜ MỞ CỬA</b>
+                    <br>
+                        <p style="padding-top: 1vh;">Từ 9:00 - 21:30 tất cả các ngày trong tuần (bao gồm cả các ngày lễ, ngày Tết).</p>
+                        <img src="https://theme.hstatic.net/200000135107/1000995416/14/ft_certi_img1.png?v=3007">
+        </div>
+                    
+                
+                    
+
+        
+
+        <div class="col-2"> 
+            <b>KHIẾU NẠI GÓP Ý</b><br>
+                    <p style="padding-top: 1vh;">Email: Cskh@taylorversion.vn</p>
+                    <b>HOTLINE</b>
+                    <p style="padding-top: 1vh;">0769 661 668</p>
+        </div>
         </div>
     </div>
+<<<<<<< HEAD
     <script type="module" src="public/js/basket/home.js"></script>
     <script type="module" src="public/js/basket/categoryProduct.js"></script>
+=======
+    </div>
+    <footer id="footer" style="height: 40px; padding: 10px;" >COPYRIGHTS © 2021 BY TAYLORVERSION COSMETICS</footer>
+    
+
+
+>>>>>>> 7114e2e04c86161f72f3e7437bf2ee9aaa30c553
 </body>
 
 </html>
-

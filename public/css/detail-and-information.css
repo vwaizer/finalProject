@@ -2,8 +2,15 @@
     box-sizing: border-box;
 }
 
+:root{
+    --pink: #ED5DB6;
+    --white: #fff;
+    --pink2: #eb008b;
+    
+}
+
 #heading{
-    background-color: #ED5DB6;
+    background-color: var(--pink);
 }
 
 #menu{
@@ -25,9 +32,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 50%;
-    border: 2px solid yellowgreen;
     border-radius: 5px;
 }
 
@@ -55,10 +61,13 @@
     
 }
 #leftbox{
-    display: inline;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aquamarine;
+    margin-left: 25px;
+    margin-top: 25px;
+    border: 1px solid var(--pink);
+    border-radius: 10px;
     width: 50%;
 }
 
@@ -67,6 +76,8 @@
     display: flex;
     justify-content: end;
 }
+
+
 #footer{
     background-color: #ED5DB6;
 }
