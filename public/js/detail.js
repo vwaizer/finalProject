@@ -20,12 +20,12 @@ if(search_param.has("id")){
     document.getElementById("rightbox").innerHTML=`
     <div >
     <div class="d-flex flex-column justify-content-center p-3">
-      <div class="p-2">Tên sản phẩm: ${newData.nameProduct}</div>
-      <div class="p-2">Loại: ${newData. brand}></div>
-      <div class="p-2">Xuất xứ: ${newData.brandOrigin}</div>
-      <div class="p-2">Thành phần: ${newData.ingredients}</div>
-      <div class="p-2">Hạn sử dụng: ${newData.expiryDate}</div>
-      <div class="p-2">Giá: ${newData.price}</div>
+      <div class="p-2"><h2>Tên sản phẩm: ${newData.nameProduct}</h2></div>
+      <div class="p-2"><h6>Loại: ${newData. brand}</h6></div>
+      <div class="p-2"><h6>Xuất xứ: ${newData.brandOrigin}</h6></div>
+      <div class="p-2"><h6>Thành phần: ${newData.ingredients}</h6></div>
+      <div class="p-2"><h6>Hạn sử dụng: ${newData.expiryDate}</h6></div>
+      <div class="p-2"><h6>Giá: ${newData.price}</h6></div>
     </div>
   </div> `
 }
