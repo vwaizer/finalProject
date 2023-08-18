@@ -3,7 +3,7 @@
 }
 
 :root{
-    --pink: #ED5DB6;
+    --pink: #ef3167;
     --white: #fff;
     --pink2: #eb008b;
     
@@ -31,6 +31,7 @@
 #rightbox{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     /* background-color: aqua; */
     width: 50%;
@@ -79,7 +80,7 @@
 
 
 #footer{
-    background-color: #ED5DB6;
+    background-color: var(--pink);
 }
 
 

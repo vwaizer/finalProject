@@ -2,56 +2,56 @@ import { productData } from "../js/data.js";
 
 
 //phân trang
-let currentPage=1
-const limitProductOnOnePage=15
+let currentPage = 1
+const limitProductOnOnePage = 15
 let listProduct = document.querySelectorAll('.item')
-function loadItem(){
-    let beginProduct =(currentPage-1) * limitProductOnOnePage
-    let endProduct = limitProductOnOnePage*currentPage-1
-    listProduct.forEach((item,index)=>{
-        if(index >=beginProduct && index <= endProduct){
-            item.style.display='block'
-        }else{
-            item.style.display='none'
+function loadItem() {
+    let beginProduct = (currentPage - 1) * limitProductOnOnePage
+    let endProduct = limitProductOnOnePage * currentPage - 1
+    listProduct.forEach((item, index) => {
+        if (index >= beginProduct && index <= endProduct) {
+            item.style.display = 'block'
+        } else {
+            item.style.display = 'none'
         }
     })
     Pages()
 }
 loadItem()
-function Pages(){
-    let page = Math.ceil(listProduct.length/limitProductOnOnePage)
-    
-     document.querySelector('.list_Page').innerHTML=''
-    let i=1
+function Pages() {
+    let page = Math.ceil(listProduct.length / limitProductOnOnePage)
 
-    while(i <=page){
-        console.log(i);
+    document.querySelector('.list_Page').innerHTML = ''
+    let i = 1
+
+    while (i <= page) {
+        // console.log(i);
         const newPage = document.createElement('li')
-        
-        newPage.innerText=i
+
+        newPage.innerText = i
         const contextPage = newPage.textContent
-        newPage.addEventListener('click',()=>{
-                    currentPage=contextPage
-                    loadItem()
-                })
-              
-        if(i===currentPage){
+        newPage.addEventListener('click', () => {
+            currentPage = contextPage
+            loadItem()
+        })
+
+        if (i === currentPage) {
             newPage.classList.add('current')
         }
         document.querySelector('.list_Page').appendChild(newPage)
         i++
-    }   
+    }
 }
-  
+
 // console.log(productData)
 let currentURL = window.location.href
-let selectPrice =document.getElementById('select_product_price')
+let selectPrice = document.getElementById('select_product_price')
 // Chuyển object trong mảng sang HTML
 let containeItems = document.querySelector('.product')
-function renderProductToHTML(array){
+export function renderProductToHTML(array) {
     containeItems.innerHTML = '';
-    array.forEach(function (obj) { 
-       
+    array.forEach(function (obj) {
+
         let divItem = document.createElement('div')
         // đưa id của sản phẩm lên url
         divItem.addEventListener('click', function () {
@@ -89,11 +89,11 @@ function renderProductToHTML(array){
         divImg.appendChild(imgItem)
     })
     listProduct = document.querySelectorAll('.item');
-    loadItem(); 
-    
+    loadItem();
+
 }
 renderProductToHTML(productData)
-selectPrice.addEventListener('change',function(){
+selectPrice.addEventListener('change', function () {
     arrangePrice(productData)
 })
 
@@ -109,41 +109,43 @@ console.log(a)
 // }
 
 // Sắp xếp sản phẩm theo giá 
-function arrangePrice (arr){
-          if(selectPrice.value==='Increase'){
-    console.log(1)
-              arr.sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
-              
-                
-            
+function arrangePrice(arr) {
+    if (selectPrice.value === 'Increase') {
+        console.log(1)
+        arr.sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
 
-  }else if(selectPrice.value==='Down'){
-    console.log(2)
-  
-    arr.sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
 
-        
-       
-  } 
 
-  renderProductToHTML(arr)
-  
+
+    } else if (selectPrice.value === 'Down') {
+        console.log(2)
+
+        arr.sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
+
+
+
+    }
+
+    renderProductToHTML(arr)
+
 }
 
 // Lọc sản phẩm theo Navbar tìm kiếm và theo giá
-const lipstickList = productData.filter(product=> product.class==='Lipstick')
-const foundationList = productData.filter(product=> product.class==='Foundation')
-const cleanserList= productData.filter(product=> product.class==='Cleanser')
-const creameLipsList = productData.filter(product=> product.category==='Son Kem')
-const matteLipsList = productData.filter(product=> product.category==='Son Thỏi')
-const tintLipsList= productData.filter(product=> product.category==='Son Tint')
-const foundaChildList = productData.filter(product => product.category==='Foundation')
-const cushionList = productData.filter(product=> product.category==='Cushion')
-const bbCreamList = productData.filter(product=> product.category==='BB Cream')
-const ccCreamList = productData.filter(product=> product.category==='CC Cream')
-const waterCleanserList = productData.filter(product=> product.category==='Water Cleanser')
-const oilCleanserList = productData.filter(product=> product.category==='Oil Cleanser')
-console.log(foundaChildList)
+
+// mảng sản phẩm 
+const lipstickList = productData.filter(product => product.class === 'Lipstick')
+const foundationList = productData.filter(product => product.class === 'Foundation')
+const cleanserList = productData.filter(product => product.class === 'Cleanser')
+const creameLipsList = productData.filter(product => product.category === 'Son Kem')
+const matteLipsList = productData.filter(product => product.category === 'Son Thỏi')
+const tintLipsList = productData.filter(product => product.category === 'Son Tint')
+const foundaChildList = productData.filter(product => product.category === 'Foundation')
+const cushionList = productData.filter(product => product.category === 'Cushion')
+const bbCreamList = productData.filter(product => product.category === 'BB Cream')
+const ccCreamList = productData.filter(product => product.category === 'CC Cream')
+const waterCleanserList = productData.filter(product => product.category === 'Water Cleanser')
+const oilCleanserList = productData.filter(product => product.category === 'Oil Cleanser')
+console.log(currentURL)
 
 const LipstickNav = document.getElementById('Lipstick')
 const FoundationNav = document.getElementById('Foundation')
@@ -161,92 +163,96 @@ const navItem = document.querySelectorAll('.NavItem li')
 const nameOfNav = document.querySelector('.name_Of_Nav')
 const headerName = document.querySelector('#headerName p')
 console.log(headerName.innerHTML)
-for(let i=0;i<navItem.length;i++){
-    navItem[i].addEventListener('click',function(){
-        nameOfNav.innerText=navItem[i].innerText
+for (let i = 0; i < navItem.length; i++) {
+    navItem[i].addEventListener('click', function () {
+        nameOfNav.innerText = navItem[i].innerText
         console.log(nameOfNav.innerText)
     })
 }
-headerName.addEventListener('click',function(){
-    nameOfNav.innerHTML= headerName.innerHTML
+headerName.addEventListener('click', function () {
+    nameOfNav.innerHTML = headerName.innerHTML
     renderProductToHTML(productData)
 })
 
-LipstickNav.addEventListener('click',function(){
+LipstickNav.addEventListener('click', function () {
+ 
     renderProductToHTML(lipstickList)
-    selectPrice.addEventListener('change',function(){
+    selectPrice.addEventListener('change', function () {
         arrangePrice(lipstickList)
-       
+
+
     })
 })
 
 
 
-FoundationNav.addEventListener('click',function(){
+FoundationNav.addEventListener('click', function () {
     renderProductToHTML(foundationList)
-    selectPrice.addEventListener('change',function(){
+    
+    selectPrice.addEventListener('change', function () {
         arrangePrice(foundationList)
-})
+    })
 })
 
-CleanserNav.addEventListener('click',function(){
+CleanserNav.addEventListener('click', function () { 
     renderProductToHTML(cleanserList)
-    selectPrice.addEventListener('change',function(){
+    
+    selectPrice.addEventListener('change', function () {
         arrangePrice(cleanserList)
+    })
 })
-})
-CreamLips.addEventListener('click',function(){
+CreamLips.addEventListener('click', function () {
     renderProductToHTML(creameLipsList)
-    selectPrice.addEventListener('change',function(){
+    selectPrice.addEventListener('change', function () {
         arrangePrice(creameLipsList)
+    })
 })
-})
-matteLips.addEventListener('click',function(){
+matteLips.addEventListener('click', function () {
     renderProductToHTML(matteLipsList)
-    selectPrice.addEventListener('change',function(){
+    selectPrice.addEventListener('change', function () {
         arrangePrice(matteLipsList)
+    })
 })
-})
-tintLips.addEventListener('click',function(){
+tintLips.addEventListener('click', function () {
     renderProductToHTML(tintLipsList)
-    selectPrice.addEventListener('change',function(){
+    selectPrice.addEventListener('change', function () {
         arrangePrice(tintLipsList)
+    })
 })
-})
-foundaChild.addEventListener('click',function(){
+foundaChild.addEventListener('click', function () {
     renderProductToHTML(foundaChildList)
-    selectPrice.addEventListener('change',function(){
+    selectPrice.addEventListener('change', function () {
         arrangePrice(foundaChildList)
+    })
 })
-})
-cushion.addEventListener('click',function(){
+cushion.addEventListener('click', function () {
     renderProductToHTML(cushionList)
-    selectPrice.addEventListener('change',function(){
+    selectPrice.addEventListener('change', function () {
         arrangePrice(cushionList)
+    })
 })
-})
-bbCream.addEventListener('click',function(){
+bbCream.addEventListener('click', function () {
     renderProductToHTML(bbCreamList)
-    selectPrice.addEventListener('change',function(){
+    selectPrice.addEventListener('change', function () {
         arrangePrice(bbCreamList)
+    })
 })
-})
-ccCream.addEventListener('click',function(){
+ccCream.addEventListener('click', function () {
     renderProductToHTML(ccCreamList)
-    selectPrice.addEventListener('change',function(){
+    selectPrice.addEventListener('change', function () {
         arrangePrice(ccCreamList)
+    })
 })
-})
-waterCleanser.addEventListener('click',function(){
+waterCleanser.addEventListener('click', function () {
     renderProductToHTML(waterCleanserList)
-    selectPrice.addEventListener('change',function(){
+    selectPrice.addEventListener('change', function () {
         arrangePrice(waterCleanserList)
+    })
 })
-})
-oilCleanser.addEventListener('click',function(){
+oilCleanser.addEventListener('click', function () {
     renderProductToHTML(oilCleanserList)
-    selectPrice.addEventListener('change',function(){
+    selectPrice.addEventListener('change', function () {
         arrangePrice(oilCleanserList)
-})
+    })
 })
 
