@@ -1,5 +1,5 @@
-import { productData } from "/public/js/data.js"
-import { addItem, saleFunction, sumItem } from "/public/js/basket/function.js"
+import { productData } from "../data.js"
+import { addItem, saleFunction, sumItem } from "./function.js"
 
 let database = productData
 var url = new URL(window.location.href);
