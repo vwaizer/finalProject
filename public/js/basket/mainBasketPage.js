@@ -59,6 +59,9 @@ if (localStorage.getItem("checkLogin") == "true") {
     document.getElementById("login").style.display = "none"
     document.getElementById("avatar").style.display = "flex"
 }
+else{
+    document.getElementById("avatar").style.display = "none"
+}
 
 
 
