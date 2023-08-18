@@ -194,3 +194,11 @@ footer {
     border-radius: 10px;
     
 }
+
+#login{
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+    padding-right: 25px;
+
+}
