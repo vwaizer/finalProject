@@ -1,4 +1,4 @@
-import { productData } from "./basket/data.js";
+import { productData } from "./data.js";
 import { clickFunction } from "./detail2.js";
 
 let newUrl= window.location.href;
@@ -12,7 +12,7 @@ if(search_param.has("id")){
     console.log(newData);
     document.getElementById("leftbox").innerHTML=`
      <div >
-          <div class="d-flex flex-column justify-content-center p-3">
+          <div class="d-flex flex-column justify-content-between p-3">
             <div class="p-2">${newData.nameProduct}</div>
             <div class="p-2"><img src="${newData.picture}" style="height: 500px"> </div>
             <div class="p-2">${newData.price}</div>
