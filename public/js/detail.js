@@ -41,3 +41,15 @@ function isItem(){
     }
 }
 isItem()
+
+// Lắng nghe sự kiện click trên mục liên hệ trong thanh navbar
+document.getElementById("contact").addEventListener("click", function() {
+    // Lấy vị trí của phần footer
+    const footerPosition = document.getElementById("contactInfo").offsetTop;
+  
+    // Cuộn trang xuống vị trí của phần footer
+    window.scrollTo({
+      top: footerPosition,
+      behavior: "smooth" // Tạo hiệu ứng cuộn mượt
+    });
+  });

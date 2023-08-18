@@ -64,7 +64,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: aquamarine; */
+    margin-left: 25px;
+    margin-top: 25px;
+    border: 1px solid var(--pink);
+    border-radius: 10px;
     width: 50%;
 }
 
