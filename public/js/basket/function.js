@@ -36,13 +36,14 @@ export function saleFunction(sum) {
 
 }
 
-export function addItem(nameItem, qualityItem = 1, priceItem) {
+export function addItem(nameItem, qualityItem = 1, priceItem,pictureItem) {
 
     document.getElementById("itemArea").innerHTML += `
         <div id="${nameItem}" >
-                    <div class="d-flex flex-row justify-content-between p-3 border rounded-3" style="background-color:#ffffff" >
-                        <div class="p-2 border rounded-4 container" >${nameItem}</div>
-                        <div class="p-2 border rounded-4">${qualityItem}</div>
+                    <div class="d-flex flex-row justify-content-between align-content-center p-3 border rounded-3" style="background-color:#ffffff" >
+                        <div class="p-2 border rounded-4  " style="width:150px"  ><img src="${pictureItem}" style="width: 100px"></div>
+                        <div class="p-2 border rounded-4 " >${nameItem}</div>
+                        <div class="p-2 border rounded-4 ">${qualityItem}</div>
                         <div class="p-2 border rounded-4">${priceItem}</div>
                     </div>
         </div>
