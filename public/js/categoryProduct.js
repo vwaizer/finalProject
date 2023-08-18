@@ -145,7 +145,7 @@ const bbCreamList = productData.filter(product => product.category === 'BB Cream
 const ccCreamList = productData.filter(product => product.category === 'CC Cream')
 const waterCleanserList = productData.filter(product => product.category === 'Water Cleanser')
 const oilCleanserList = productData.filter(product => product.category === 'Oil Cleanser')
-console.log(currentURL)
+
 
 const LipstickNav = document.getElementById('Lipstick')
 const FoundationNav = document.getElementById('Foundation')
@@ -161,8 +161,8 @@ const waterCleanser = document.getElementById('water-Cleanser')
 const oilCleanser = document.getElementById('oil-Cleanser')
 const navItem = document.querySelectorAll('.NavItem li')
 const nameOfNav = document.querySelector('.name_Of_Nav')
-const headerName = document.querySelector('#headerName p')
-console.log(headerName.innerHTML)
+const headerName = document.querySelectorAll('.topnav a')[2]
+console.log(headerName)
 for (let i = 0; i < navItem.length; i++) {
     navItem[i].addEventListener('click', function () {
         nameOfNav.innerText = navItem[i].innerText
@@ -170,9 +170,10 @@ for (let i = 0; i < navItem.length; i++) {
     })
 }
 headerName.addEventListener('click', function () {
-    nameOfNav.innerHTML = headerName.innerHTML
-    renderProductToHTML(productData)
+    window.location.href="CategoryProduct.html"
+
 })
+console.log(currentURL)
 
 LipstickNav.addEventListener('click', function () {
  
