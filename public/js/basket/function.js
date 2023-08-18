@@ -7,7 +7,7 @@ export function saleFunction(sum) {
 
     let couponCode = document.getElementById("input").value
     if (document.getElementById("input").value == "") {
-        document.getElementById("sum").style.color = "red"
+        document.getElementById("sum").style.color = "yellow"
         document.getElementById("sum").style.fontSize = "30px"
         document.getElementById("sum").innerHTML = sum + " VND"
         document.getElementById("subSum").style.display = "none"
@@ -26,7 +26,7 @@ export function saleFunction(sum) {
         }
 
         document.getElementById("subSum").style.display = "flex"
-        document.getElementById("subSum").style.color = "red"
+        document.getElementById("subSum").style.color = "yellow"
         document.getElementById("sum").style.color = "gray"
         document.getElementById("sum").style.textDecoration = "line-through"
         document.getElementById("subSum").innerHTML = subSum + " VND"
@@ -40,7 +40,7 @@ export function addItem(nameItem, qualityItem = 1, priceItem) {
 
     document.getElementById("itemArea").innerHTML += `
         <div id="${nameItem}" >
-                    <div class="d-flex flex-row justify-content-around p-3 border rounded-3" style="background-color:#ffffff" >
+                    <div class="d-flex flex-row justify-content-between p-3 border rounded-3" style="background-color:#ffffff" >
                         <div class="p-2 border rounded-4 container" >${nameItem}</div>
                         <div class="p-2 border rounded-4">${qualityItem}</div>
                         <div class="p-2 border rounded-4">${priceItem}</div>
@@ -83,7 +83,7 @@ export function sumItem(qualityItem, priceItem) {
     let sumInFunction = 0
     sumInFunction += parseFloat(qualityItem) * parseFloat(priceItem) * 1000
     let sum = sumInFunction + parseFloat(localStorage.getItem("sum"))
-    document.getElementById("sum").style.color = "red"
+    document.getElementById("sum").style.color = "yellow"
     document.getElementById("sum").style.fontSize = "30px"
     document.getElementById("sum").innerHTML = sum + " VND"
     document.getElementById("subSum").style.display = "none"

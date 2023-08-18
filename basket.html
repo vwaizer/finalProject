@@ -1,19 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    
+    <title>Your Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="/public/css/home_style.css">
 
 </head>
-<body>
-    <header>
 
+<body class="d-sm-flex flex-column " >
+    <header>
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-1" style="background-color: #ef3167;"> </div>
+                <div class="col-3"
+                    style="background-color: #ef3167; display: flex; align-items: center; padding-left: 50px;">
+                    <div class="search-bar">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-1" style="background-color: #ef3167;"> </div>
+                <div class="col-3" style="background-color: #ef3167;">
+                    <div id="logo">
+                        <img src="https://i.pinimg.com/originals/a0/36/86/a03686d0ade36f49cd08b34f77140efc.png"
+                            alt="Logo" width="100%" height="100%">
+                    </div>
+                </div>
+
+                <div class="col-1" style="background-color: #ef3167;"> </div>
+
+                <div class="col-2"
+                style="background-color: #ef3167; display: flex; justify-content: flex-end; align-items: center;">
+
+
+                <div id="login">
+                    <a href="login.html" class="btn btn-primary"
+                        style="background-color: #ae274d; border-color: transparent;" >Sign In</a>
+                </div>
+                <div id="avatar" style="display: none">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+                        style="width: 50px; " alt="Avatar" id="avatar" />
+                </div>
+
+            </div>
+
+                <div class="col-1" style="background-color: #ef3167; display: flex; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+                        <style>
+                            svg {
+                                fill: #f7f7f8
+                            }
+                        </style>
+                        <path
+                            d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-12" style="background-color: #F0F0F0; display: flex; justify-content: center;">
+                    <nav class="navbar navbar-expand-lg" style="color: black; font-size: 20px;" ;>
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarText">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Giới thiệu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Sản Phẩm</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Liên Hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
     <div class="d-sm-flex flex-row justify-content-between p-2 container-sm">
-        <div id="basket" class="p-5 border rounded-2 ">
+        <div id="basket" class="p-5 border rounded-2 " style="background-color: #ef8ea1;">
             <!-- <div class="d-flex flex-row justify-content-around p-3" id="item" >
                     <div class="p-2" id="son">name</div>
                     <div class="p-2">quality</div>
@@ -21,79 +107,83 @@
                     <div class="p-2"><button type="button" class="btn-close" onclick="removeItem('son')"></button></div>
             </div> -->
             <div id="itemArea">
-                
+
             </div>
-            
+
         </div>
 
-        
-        <div id="payment" class="p-5 border rounded-2">
-                <div class="w-100">
-                    <div id="sum">sum</div>
-                    <div id="subSum">subsum</div>
-                </div>
 
-                <div class="d-flex  flex-row justify-content-between">
-                    
-                    
-                    <div class="p-2">
-                        <div>
-                            <input type="text" id="input" class="container-sm">  
-                        </div> 
+        <div id="payment" class="p-5 border rounded-2" style="background-color: #ef8ea1;">
+            <div class="w-100">
+                <div id="sum">sum</div>
+                <div id="subSum">subsum</div>
+            </div>
+
+            <div class="d-flex  flex-row justify-content-between">
+
+
+                <div class="p-2">
+                    <div>
+                        <input type="text" id="input" class="container-sm">
                     </div>
-                    <button  type="button" id="button" class="p-2">
-                        coupon
-                    </button>
                 </div>
-                <br>
-                <button type="button" class="container" >Thanh toán</button>
+                <button type="button" id="button" class="p-2 rounded-circle bg-info">
+                    coupon
+                </button>
+            </div>
+            <br>
+            <button type="button" class="container rounded-pill bg-info">Thanh toán</button>
         </div>
     </div>
-        <br>
-       <!-- footer------------------- -->
-        <div>
-            <div style="height: 250px;display: flex;justify-content: space-evenly;width: 100%;border-top: 1px solid #ef8ea1;">
-                <div style="width: 42vh;height: 100%;padding: 10px 15px;">
-                    <b>TaylorVersion COSMETICS - THIÊN ĐƯỜNG MỸ PHẨM CHÍNH HÃNG TPHCM</b><br>
-                    <span style="padding-top: 1vh;">Địa chỉ: </span><br>
+    <br>
+    <!-- footer------------------- -->
+    <div>
+        <div
+            style="height: 250px;width: 100%;border-top: 1px solid #ef8ea1;" class="container-sm d-sm-flex justify-content-evenly">
+            <div style="width: 42vh;height: 100%;padding: 10px 15px;">
+                <b>TaylorVersion COSMETICS - THIÊN ĐƯỜNG MỸ PHẨM CHÍNH HÃNG TPHCM</b><br>
+                <span style="padding-top: 1vh;">Địa chỉ: </span><br>
 
-                        <b>CN1: </b><p>49 Trần Hưng Đạo, Phường Tân Thành, Quận Tân Phú</p>
-                        <b>CN2: </b><p>B.0012A Tòa Sarica Zone B- Khu Sala, Số 06 đường D9, P. An Lợi Đông, Quận 2, TP. Thủ Đức</p>
-                    
+                <b>CN1: </b>
+                <p>49 Trần Hưng Đạo, Phường Tân Thành, Quận Tân Phú</p>
+                <b>CN2: </b>
+                <p>B.0012A Tòa Sarica Zone B- Khu Sala, Số 06 đường D9, P. An Lợi Đông, Quận 2, TP. Thủ Đức</p>
 
-                </div>
-                <div style="width: 42vh;height: 100%; padding: 10px 15px;">
+
+            </div>
+            <div style="width: 42vh;height: 100%; padding: 10px 15px;" class="container-sm">
                 <b style="padding: 5.5vh;">CHĂM SÓC KHÁCH HÀNG</b>
                 <ul style="list-style-type: none;padding-top: 1vh;">
                     <li>Giới thiệu</li>
-                <li>Chính sách đổi trả</li>
-                <li>Chính sách bảo mật</li>
-                <li>Chính sách thanh toán</li>
-                <li>Chính sách bảo hành</li>
-                <li>Hướng dẫn mua hàng</li>
-                <li>Điều khoản dịch vụ</li>
-                <li>Vận chuyển</li>
-                <li>Liên hệ hợp tác</li>
+                    <li>Chính sách đổi trả</li>
+                    <li>Chính sách bảo mật</li>
+                    <li>Chính sách thanh toán</li>
+                    <li>Chính sách bảo hành</li>
+                    <li>Hướng dẫn mua hàng</li>
+                    <li>Điều khoản dịch vụ</li>
+                    <li>Vận chuyển</li>
+                    <li>Liên hệ hợp tác</li>
                 </ul>
-                </div>
-                <div style="width: 42vh;height: 100%;padding: 10px 15px;">
-                    <b>GIỜ MỞ CỬA</b><br>
-                    <p style="padding-top: 1vh;">Từ 9:00 - 21:30 tất cả các ngày trong tuần (bao gồm cả các ngày lễ, ngày Tết).</p>
-                    <img src="https://theme.hstatic.net/200000135107/1000995416/14/ft_certi_img1.png?v=3007">
-                </div>
-                <div style="width: 42vh;height: 100%;padding: 10px 15px;">
+            </div>
+            <div style="width: 42vh;height: 100%;padding: 10px 15px;" class="container-sm">
+                <b>GIỜ MỞ CỬA</b><br>
+                <p style="padding-top: 1vh;">Từ 9:00 - 21:30 tất cả các ngày trong tuần (bao gồm cả các ngày lễ, ngày
+                    Tết).</p>
+                <img src="https://theme.hstatic.net/200000135107/1000995416/14/ft_certi_img1.png?v=3007">
+            </div>
+            <div style="width: 42vh;height: 100%;padding: 10px 15px;" class="container-sm">
                 <b>KHIẾU NẠI GÓP Ý</b><br>
                 <p style="padding-top: 1vh;">Email: Cskh@lamthaocosmetics.vn</p>
                 <b>HOTLINE</b>
                 <p style="padding-top: 1vh;">0769 661 668</p>
-                </div>
             </div>
-            <br>
-            <br>
-                <div  class="container-fluid d-flex flex-row-reverse">
-                <footer   >COPYRIGHTS © 2021 BY TAYLORVERSION COSMETICS</footer>
-                </div>
-    </div>     
+        </div>
+        <br>
+        <br>
+        <div class="container-fluid d-flex flex-row-reverse position-relative bottom-0 end-0" style="background-color: #FF779E;">
+            <footer>COPYRIGHTS © 2021 BY TAYLORVERSION COSMETICS</footer>
+        </div>
+    </div>
     <!-- <div class="icon-body container">
         <i class="fa-brands fa-square-facebook fa-3x" style="color: #133671;"></i>
         <i class="fa-brands fa-square-instagram fa-3x" style="color: #C32AA3;"></i>
@@ -102,8 +192,11 @@
         <img src="./public/img/TaylorVersion-03.png"  style="width: 37px;height: 37px;border-radius: 4px;margin-top: 3px;background-color: #ef3167;">
         <i class="fa-solid fa-circle-heart " style="color: #ee3f62;font-size: 3em;"></i>
     </div> -->
-    <script src="../finalProject/public/js/basket/main.js" type="module"></script>
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="/public/js/basket/mainBasketPage.js" type="module"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

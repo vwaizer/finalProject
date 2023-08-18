@@ -61,10 +61,10 @@
     
 }
 #leftbox{
-    display: inline;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     width: 50%;
 }
 
