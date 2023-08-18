@@ -14,7 +14,7 @@ if(search_param.has("id")){
      <div >
           <div class="d-flex flex-column justify-content-between p-3">
             <div class="p-2">${newData.nameProduct}</div>
-            <div class="p-2"><img src="${newData.picture}"> </div>
+            <div class="p-2"><img src="${newData.picture}" style="height: 500px"> </div>
             <div class="p-2">${newData.price}</div>
           </div>
         </div> 
