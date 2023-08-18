@@ -2,7 +2,7 @@ import { productData } from "/finalProject/public/js/basket/data.js";
 
 
 let newUrl= window.location;
-console.log(newUrl);
+// console.log(newUrl);
 let url = new URL(newUrl);
 let search_param = url.searchParams;
 if(search_param.has("id")){
@@ -13,7 +13,17 @@ if(search_param.has("id")){
     console.log(newData);
     document.getElementById("leftbox").innerHTML=newData
 }
-
+//  function getProduct(){
+//     let getItem = document.getElementById("leftbox");
+//     getItem.innerHTML = "";
+//     productData.forEach(element => {
+//         Tensanpham = element.nameProduct;
+//         Giasanpham = element.price;
+//         getItem.innerHTML = productData
+        
+//     });
+//  }
+// getProduct()
 
 
 function isItem(){
