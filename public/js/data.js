@@ -31,7 +31,7 @@ export const productData = [
         price: '159,000'
     },
     {
-        id: 6,
+        id: 5,
         class: 'Cleanser',
         picture: "public/img/Nước Tẩy Trang Byphasse Solution Micerallaire Face.webp",
         category: 'Water Cleanser',
@@ -39,7 +39,7 @@ export const productData = [
         price: '85,000' 
     },
     {
-        id: 7,
+        id: 6,
         class: 'Lipstick',
         picture: "public/img/3CE Soft Matte.webp",
         category: 'Son Thỏi',
@@ -48,7 +48,7 @@ export const productData = [
 
     },
     {
-        id: 8,
+        id: 7,
         class: 'Lipstick',
         picture: 'public/img/3CE Velvet Lip Tint.webp',
         category: 'Son Kem',
@@ -56,7 +56,7 @@ export const productData = [
         price: '289,000',
     },
     {   
-        id: 9,
+        id: 8,
         class: 'Foundation',
         picture: 'public/img/Espoir Pro Tailor Foundation Be Glow SPF25 PA++.webp',
         category: ' Foundation',
@@ -65,7 +65,7 @@ export const productData = [
 
     },
     {
-        id: 10,
+        id: 9,
         class: 'Lipstick',
         picture: 'public/img/Bbia Last Velvet Lip Tint.webp',
         category: 'Son Kem',
@@ -73,7 +73,7 @@ export const productData = [
         price: '139,000'
     },
     {
-        id:11,
+        id:10,
         class: 'Foundation',
         picture: 'public/img/Maybelline Fit Me Foundation Matte + Poreless Normal To Oily SPF 22.webp',
         category: 'Foundation',
@@ -81,7 +81,7 @@ export const productData = [
         price: '209,000'
     },
     {
-        id: 12,
+        id: 11,
         class: 'Foundation',
         picture: "public/img/Transino Whitening CC Cream.jpg",
         category: 'CC Cream',
@@ -89,7 +89,7 @@ export const productData = [
         price: '700,000' 
     },
     {
-        id: 13,
+        id: 12,
         class: 'Lipstick',
         picture: 'public/img/Black Rouge Air Fit Velvet Season 9 - Acoustic Mood.webp',
         category: 'Son Kem',
@@ -97,7 +97,7 @@ export const productData = [
         price: '169,000',
     },
     {
-        id: 14,
+        id: 13,
         class: 'Foundation',
         picture: 'public/img/GLAMRR Q Vegan Super Cover Cushion.webp',
         category: 'Cushion',
@@ -105,7 +105,7 @@ export const productData = [
         price: '395,000',
     },
     {
-        id: 15,
+        id: 14,
         class: 'Foundation',
         picture: "public/img/Meishoku Moist Labo BB Matte Cream.webp",
         category: 'CC Cream',
@@ -113,7 +113,7 @@ export const productData = [
         price: '900,000' 
     },
     {
-        id:16,
+        id:15,
         class: 'Lipstick',
         picture: "public/img/Black Rouge Wearable Velvet Lipstick.webp",
         category: 'Son Thỏi',
@@ -121,7 +121,7 @@ export const productData = [
         price: '109,000'
     },
     {
-        id:17,
+        id:16,
         class: 'Lipstick',
         picture: 'public/img/Blackrouge half n half water glow season 2.webp',
         category: 'Son Tint',
@@ -129,7 +129,7 @@ export const productData = [
         price: '169,000'
     },
     {
-        id: 18,
+        id: 17,
         class: 'Lipstick',
         picture: 'public/img/Dearmay California Cherry Velvet Tint.webp',
         category: 'Son Tint',
@@ -137,7 +137,7 @@ export const productData = [
         price: '155,000'
     },
     {
-        id: 19,
+        id: 18,
         class: 'Lipstick',
         picture: 'public/img/Dearmay La Piste Lip Tint.webp',
         category: 'Son Tint',
@@ -145,7 +145,7 @@ export const productData = [
         price: '115,000'
     },
     {
-        id: 20,
+        id: 19,
         class: 'Lipstick',
         picture: 'public/img/Lilybyred Glassy Layer Fixing Tint.webp',
         category: 'Son Tint',
@@ -154,7 +154,7 @@ export const productData = [
     },
 
     {
-        id: 21,
+        id: 20,
         class: 'Lipstick',
         picture: 'public/img/Lilybyred Mood Cinema Velvet Epilogue 3.5g.webp',
         category: 'Son Thỏi',
@@ -163,7 +163,7 @@ export const productData = [
 
     },
     {
-        id: 22,
+        id: 21,
         class: 'Foundation',
         picture: 'public/img/GLAMRR Q LONG WEAR DD CUSHION (1 lõi x 13g).avif',
         category: 'Cushion',
@@ -171,7 +171,7 @@ export const productData = [
         price: '325,000',
     },
     {
-        id: 23,
+        id: 22,
         class: 'Lipstick',
         picture: 'public/img/Maybelline.webp',
         category: 'Son Thỏi',
@@ -179,7 +179,7 @@ export const productData = [
         price: '339,000',
     },
     {
-        id: 24,
+        id: 23,
         class: 'Foundation',
         picture: "public/img/Sakura CC Cream Flawless Control Base.jpg",
         category: 'CC Cream',
@@ -187,7 +187,7 @@ export const productData = [
         price: '900,000' 
     },
     {
-        id: 25,
+        id: 24,
         class: 'Cleanser',
         picture: "public/img/Nước Tẩy Trang Cây Phỉ Kháng Viêm Derladie Cleansing Water Witch Hazel.jpg",
         category: 'Water Cleanser',
@@ -195,7 +195,7 @@ export const productData = [
         price: '169,000'
     },
     {
-        id: 26,
+        id: 25,
         class: 'Foundation',
         picture: 'public/img/COLORKEY Foundation.jpg',
         category: 'Foundation',
@@ -203,7 +203,7 @@ export const productData = [
         price: '238,000'
     },
     {
-        id: 27,
+        id: 26,
         class: 'Lipstick',
         picture: 'public/img/Merzy The Watery Dew Tint 3.jpg',
         category: 'Son Tint',
@@ -211,7 +211,7 @@ export const productData = [
         price: '159,000'
     },
     {
-        id: 28,
+        id: 27,
         class: 'Foundation',
         picture: 'public/img/Clio Kill Cover Glow Foundation SPF50+ PA++++ 38g.jpg',
         category: 'Foundation',
@@ -219,7 +219,7 @@ export const productData = [
         price: '239,000'
     },
     {
-        id:29,
+        id:28,
         class: 'Foundation',
         picture: "public/img/L'Oreal Paris True match Blendable Foundation.webp",
         category: 'Foundation',
@@ -227,7 +227,7 @@ export const productData = [
         price: '269,000'
     },
     {
-        id:30,
+        id:29,
         class: 'Foundation',
         picture: "public/img/Espoir Pro Tailor Be Glow Cushion .webp",
         category: 'Cushion',
@@ -235,7 +235,7 @@ export const productData = [
         price: '269,000'
     },
     {
-       
+        id:30,
         class: 'Lipstick',
         picture: 'public/img/Merzy The Watery Dew.jpg',
         category: 'Son Tint',
@@ -436,7 +436,7 @@ export const productData = [
         price: '440,000'
     },
     {
-        id: 53,
+        id: 54,
         class: 'Cleanser',
         picture: "public/img/Dầu Tẩy Trang Manyo Herb Green Cleansing Oil.jpg",
         category: 'Oil Cleanser',
@@ -444,7 +444,7 @@ export const productData = [
         price: '380,000'
     },
     {
-        id: 54,
+        id: 55,
         class: 'Cleanser',
         picture: "public/img/Nước Tẩy Trang Dành Cho Da Dầu Compliment Micellar Water Active 400ml.webp",
         category: 'Water Cleanser',
@@ -452,7 +452,7 @@ export const productData = [
         price: '115,000'
     },
     {
-        id: 55,
+        id: 56,
         class: 'Cleanser',
         picture: "public/img/Nước Tẩy Trang Nhạy Cảm Chacott Cleansing Water ( Mẫu Mới ).webp",
         category: 'Water Cleanser',
@@ -460,7 +460,7 @@ export const productData = [
         price: '379,000'
     },
     {
-        id: 55,
+        id: 57,
         class: 'Foundation',
         picture: "public/img/Kem Nền Maybelline New York Fit Me Fresh Tint.webp",
         category: 'Foundation',
