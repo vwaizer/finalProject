@@ -1,4 +1,4 @@
-import { productData } from "./data.js";
+import { productData } from "../js/data.js";
 
 
 //phân trang
