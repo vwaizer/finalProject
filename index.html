@@ -33,8 +33,9 @@
 
             <div class="col-2" style="background-color: #ef3167; display: flex; justify-content: flex-end; align-items: center;">
                 
-                <a href="login.html" class="btn btn-primary" style="background-color: #ae274d; border-color: transparent;">Sign In</a>
-                
+                <a href="login.html" class="btn btn-primary" style="background-color: #ae274d; border-color: transparent;" id="sign">Sign In</a>
+                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+                        style="width: 50px;display: none; " alt="Avatar" id="avatar" />
             </div>
 
             <div class="col-1" style="background-color: #ef3167; display: flex; align-items: center;"> 
@@ -49,7 +50,7 @@
     <div class="topnav" id="myTopnav" style="display: flex; justify-content: space-evenly; font-size:  30px;">
         <a href="index.html">Trang chủ</a>
         <a href="about.html">Giới Thiệu</a>
-        <a href="http://127.0.0.1:5500/CategoryProduct.html">Sản Phẩm</a>
+        <a href="CategoryProduct.html">Sản Phẩm</a>
         <a href="#footer">Liên hệ</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -256,7 +257,12 @@
     </div>
     <footer id="footer" style="height: 40px; padding: 10px;" >COPYRIGHTS © 2021 BY TAYLORVERSION COSMETICS</footer>
     
-
+<script>
+  if(localStorage.getItem("checkLogin")){
+    document.getElementById("avatar").style.display="flex"
+    document.getElementById("sign").style.display="none"
+  }
+</script>
 
 </body>
 

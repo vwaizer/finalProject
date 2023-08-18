@@ -6,19 +6,19 @@ var url = new URL(window.location.href);
 // var url = new URL("http://www.example.com/edit.html?id=9,4&quality=5")
 var list = url.searchParams.get("id");
 let listItem = []
-var checkList = []
-checkList.push(...list)
-console.log(checkList);
-checkList.forEach(checkListItem => {
-    if (checkListItem == ",") {
+// var checkList = []
+// checkList.push(...list)
+// console.log(checkList);
+// checkList.forEach(checkListItem => {
+//     if (checkListItem == ",") {
 
-    }
-    else {
-        listItem.push(parseInt(checkListItem))
-    }
-})
-
-console.log(listItem)
+//     }
+//     else {
+        
+//     }
+// })
+listItem.push(parseInt(list))
+// console.log(listItem)
 let qualityItem = []
 let sumTotal = 0
 localStorage.setItem("sum", 0)

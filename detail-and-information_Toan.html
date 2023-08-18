@@ -17,10 +17,12 @@
 
 <body>
   <header id="heading">
-    <ul class="nav justify-content-end" style="margin-right: 25px">
-      <a href="#"><i id="user" class="fa-regular fa-user" style="margin-top: 13px; color: white"></i></a>
+    <ul class="nav justify-content-end" style="margin-right: 25px ;">
+      <a href="#" ><i id="user" class="fa-regular fa-user" style="margin-top: 13px; color: white"></i></a>
       <li class="nav-item">
-        <a id="dangnhap" target="_blank" class="nav-link active" href="login.html" style="color: white">Login</a>
+        <a id="dangnhap" target="_blank" class="nav-link active" href="../finalProject/login.html" style="color: white">Login</a>
+        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+        style="width: 50px; margin-right: 20px; " alt="Avatar" id="avatar" />
       </li>
       <a target="blank" href="#"><i class="fa-solid fa-cart-shopping" style="color: white; margin-top: 13px"></i></a>
     </ul>
@@ -109,6 +111,17 @@
     </footer>
     <script src="../finalProject/public/js/detail.js" type="module"></script>
     <script src="../finalProject/public/js/detail2.js" type="module"></script>
+    <script>
+       
+      if(localStorage.getItem("checkLogin")){
+        document.getElementById("avatar").style.display="flex"
+        document.getElementById("dangnhap").style.display="none"
+        document.getElementById("user").style.display="none"
+      }
+      else{
+        document.getElementById("avatar").style.display="none"
+      }
+    </script>
 </body>
 
 </html>
