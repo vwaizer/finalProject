@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    height: 1000px;
+    width: 100%;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(32,41,56);
+    width: 20%;
+
+}
+
+.container5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.container6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: rgb(200,208,229);
+    width: 100%;
+}
+h1{
+    padding-left: 100px;
+}
+.context {
+    border: 2px dashed black;
+    padding: 20px;
+    height: 850px;
+    width: 100%;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    background-color:  rgb(200,208,229);
+}
+
+.container4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1px;
+    width: 6.5%;
+    background-color: rgb(44,55,73);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 5px 0 5px 0;
+}
+
+li {
+    font-size: large;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+    color: white;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+}
+
+.container0 .replaceable{
+    width: 16.65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    background-color: rgb(44,55,73);
+}
+.replace {
+    display: none;
+
+
+}
+#contextLogin{
+    box-sizing: border-box;
+    width: 600px;
+    height: 250px;
+    background-color: whitesmoke;
+    left: 400px;
+    top: 200px;
+    position: relative;
+    padding: 10px;
+    
+}
+#contextLogin>h1{
+    padding-left: 0px;
+}
+.loginPage{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+a{
+    color: greenyellow;
+    
+}
+a:hover{
+    cursor: pointer;
+    color: purple;
+}
+.belowLogin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container7{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+
