@@ -3,7 +3,7 @@
 }
 
 :root{
-    --pink: #ED5DB6;
+    --pink: #ef3167;
     --white: #fff;
     --pink2: #eb008b;
     
@@ -79,7 +79,7 @@
 
 
 #footer{
-    background-color: #ED5DB6;
+    background-color: var(--pink);
 }
 
 
