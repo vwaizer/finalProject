@@ -3,6 +3,6 @@
 
 // isItem()
 export function clickFunction(idItem){
-    window.location.href=`http://127.0.0.1:5501/finalProject/basket.html?id=${idItem}`
+    window.location.href=`./basket.html?id=${idItem}`
 }
 
