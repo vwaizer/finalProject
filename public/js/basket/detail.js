@@ -20,7 +20,6 @@ if(search_param.has("id")){
         </div> 
     `
 }
-
 // function clickButton(){
 //     window.location.href="http://127.0.0.1:5500/basket.html?id=${idItem}"
 // }
