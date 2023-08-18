@@ -13,12 +13,18 @@ if(search_param.has("id")){
     document.getElementById("leftbox").innerHTML=`
      <div >
           <div class="d-flex flex-column justify-content-between p-3">
-            <div class="p-2">${newData.nameProduct}</div>
             <div class="p-2"><img src="${newData.picture}" style="height: 500px"> </div>
-            <div class="p-2">${newData.price}</div>
           </div>
         </div> 
     `
+    document.getElementById("rightbox").innerHTML=`
+    <div >
+    <div class="d-flex flex-column justify-content-center p-3">
+        <div class="p-2">${newData.nameProduct}</div>
+      <div class="p-2">${newData.information}</div>
+      <div class="p-2">${newData.price}</div>
+    </div>
+  </div> `
 }
 // function clickButton(){
 //     window.location.href="http://127.0.0.1:5500/basket.html?id=${idItem}"
