@@ -21,7 +21,9 @@
 <body>
     
         <div style="height: 150px; background-color: #ef3167;text-align: center;" class="d-flex justify-content-end">
-            <div id="login"><a style="color: #f0f0f0;" href="http://127.0.0.1:5501/finalProject/login.html">Login</a></div>
+            <div id="login"><a style="color: #f0f0f0;" href="http://127.0.0.1:5501/finalProject/login.html" id="loginButton">Login</a><img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+                style="width: 50px;height: 35px;  " alt="Avatar" id="avatar" /> </div>
+            
             <img style="width: 250px;" src="https://i.pinimg.com/originals/a0/36/86/a03686d0ade36f49cd08b34f77140efc.png">
         </div>
         <div class="topnav" id="myTopnav" style="display: flex; justify-content: space-evenly; font-size:  30px;">
@@ -228,6 +230,17 @@
         <script type="module" src="/finalProject/public/js/categoryProduct.js"></script>
         <script type="module" src="../finalProject/public/js/data.js"></script>
         <!-- <script  src="/public/js/basket/paging.js"></script> -->
+        <script>
+       
+            if(localStorage.getItem("checkLogin")){
+              document.getElementById("avatar").style.display="flex"
+              document.getElementById("loginButton").style.display="none"
+              document.getElementById("user").style.display="none"
+            }
+            else{
+              document.getElementById("avatar").style.display="none"
+            }
+          </script>
 </body>
 
 </html>
