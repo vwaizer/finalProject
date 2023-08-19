@@ -1,5 +1,5 @@
 .divLogin{
-    background-color: #eb008b;
+    background-color: #ee2098;
     width: 500px;
     height: 550px;
     margin: auto;
@@ -16,4 +16,9 @@
     width: 70px;
     height: 30px;
     
+}
+#submit{
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
 }

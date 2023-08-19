@@ -13,19 +13,20 @@ if(search_param.has("id")){
     document.getElementById("leftbox").innerHTML=`
      <div >
           <div class="d-flex flex-column justify-content-between p-3">
-            <div class="p-2"><img src="${newData.picture}" style="height: 500px"> </div>
+            <div class="p-2"><img src="${newData.picture}" style="height: 500px;padding-left:100px"> </div>
           </div>
         </div> 
     `
     document.getElementById("rightbox").innerHTML=`
     <div >
     <div class="d-flex flex-column justify-content-center p-3">
-      <div class="p-2" style="color: #ef3167"><h2>Tên sản phẩm: ${newData.nameProduct}</h2></div>
-      <div class="p-2"><h6>Loại: ${newData. brand}</h6></div>
-      <div class="p-2"><h6>Xuất xứ: ${newData.brandOrigin}</h6></div>
+      <div class="p-2" style="color: #ef3167"><h2> ${newData.nameProduct}</h2></div>
+      <div class="p-2"><h6>Thương hiệu: ${newData. brand}</h6></div>
+      <div class="p-2"><h6>Xuất xứ thương hiệu: ${newData.brandOrigin}</h6></div>
+      <div class="p-2"><h6>Nơi sản xuất: ${newData.madeIn}</h6></div>
       <div class="p-2"><h6>Thành phần: ${newData.ingredients}</h6></div>
       <div class="p-2"><h6>Hạn sử dụng: ${newData.expiryDate}</h6></div>
-      <div class="p-2" style="color: blue"><h6>Giá: ${newData.price} VND</h6></div>
+      <div class="p-2" style="color: #d30000"><h2> ${newData.price} VND</h6></div>
     </div>
   </div> `
 }

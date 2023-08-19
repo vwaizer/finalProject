@@ -122,14 +122,7 @@ export const productData = [
         ingredients:'Purified Water, Cyclopentasiloxane, Titanium Dioxide (CI 77891),\
          Ethylhex Silmethoxycinnamate, cyclohexasiloxane, butylene glycol,\
          diphenylsiloxyphenyltrimethicone, cetylethylhexanoate, trimethylsiloxysilicate,\
-         hydrogenated polyisobutene, PEG-30 dipolyhydride Roxy stearate, diisostearyl malate,\
-         niacinamide, cetyl PG / PG-10/1 dimethicone, polymethyl methacrylate, bis-PEG / PG-14/14 dimethicone,\
-         polybutene, Sodium chloride, disteadimonium hectorite, polypropylsilsesquioxane,\
-         dimethicone, aluminum hydroxide, polyvinyl alcohol, triethoxycaprylyl silane, glycerin,\
-         caprylyl glycol, fragrance, vinyl dimethicone /Methiconylsesquioxane crosspolymer, ethanol,\
-         disodium EDITA, ethylhexylglycerin, adenosine, phenoxyethanol, olive oil, trehalose,\
-         sodium hyaluronate, sunflower seed oil, jojoba seed oil, grape seed oil,\
-         macadamia Seed oil, yellow iron oxide, red iron oxide, black iron oxide',
+         hydrogenated polyisobutene...',
          expiryDate: '36 tháng'
 
     },
@@ -146,11 +139,7 @@ export const productData = [
         ingredients:'Dimethicone, Dimethicone/​Vinyl, Dimethicone Crosspolymer,\
          Synthetic Fluorphlogopite, Propylene Glycol, Water, Polyglyceryl-2 Isostearate,\
          Cyclopentasiloxane, Trimethylsiloxysilicate, Isododecane, Cetyl PEG/​PPG-10/​1 Dimethicone,\
-         Polymethyl Methacrylate, Polymethylsilsesquioxane, VP/​Hexadecene Copolymer,\
-         Sorbitan Sesquioleate, 1,2-Hexanediol, Phenoxyethanol, PEG-60 Hydrogenated Castor Oil,\
-         Disteardimonium Hectorite, Palmitic Acid, Stearic Acid, Propylene Carbonate,\
-         Silica Dimethyl Silylate, Yellow 6 (Ci 15985), Red 27 (Ci 45410:1),Red 28 (Ci 45410),\
-         Yellow 6 Lake (Ci 15985), Red 6 Lake (Ci 15850), Yellow 5 Lake (Ci 19140), Fragrance. ',
+         Polymethyl Methacrylate ... ',
          expiryDate: '36 tháng'
     },
     {
@@ -166,9 +155,7 @@ export const productData = [
         ingredients:'Aqua / Water, Cyclohexasiloxane, Ci 77891 / Titanium Dioxide, Nylon-12,\
          Isododecane, Alcohol, Octocrylene, Peg-10 Dimethicone, Cetyl Peg/Ppg-10/1 Dimethicone,\
          Ci 77491, Ci 77492, Ci 77499 / Iron Oxides, Peg-20, Polyglyceryl-4 Isostearate,\
-         Disteardimonium Hectorite, Phenoxyethanol, Magnesium Sulfate, Disodium Stearoyl Glutamate,\
-         Hdi/Trimethylol Hexyllactone Crosspolymer, Methylparaben, Silica Silylate, Tocopherol,\
-         Aluminum Hydroxide, Silica, Pentaerythrityl Tetra-Di-T-Butyl Hydroxyhydrocinnamate',
+         Disteardimonium Hectorite, Phenoxyethanol...',
          expiryDate: '36 tháng'
     },
     {
@@ -214,7 +201,7 @@ export const productData = [
         madeIn:'Hàn Quốc',
         ingredients:'Centella Asiatica Extract, Cyclopentasiloxane, Zinc Oxide,\
          Titanium Dioxide, Dipropylene Glycol, Isododecane, Isopropyl Palmitate,\
-         PEG-10 Dimethicone, Niacinamide, Magnesium Sulfate, Methyl Methacrylate Crosspolymer, Silica,…',
+         PEG-10 Dimethicone, Niacinamide…',
          expiryDate: '36 tháng'
     },
     {
@@ -229,7 +216,7 @@ export const productData = [
         madeIn:'Nhật Bản',
         ingredients:'Water, Glycerin, Butylene Glycol, Hydrogenated Polyisobutene,\
          Ethylhexyl Palmitate, Dimethicone, Dipentaerythrityl Hexahydroxystearate,\
-         Glyceryl Stearate Stearic Acid, Behenyl Alcohol, Beeswax, Polyglyceryl-10 Stearate, Pentylene Glycol,…',
+         Glyceryl Stearate Stearic Acid, Behenyl Alcohol,…',
          expiryDate: '24 tháng'
     },
     {
@@ -255,15 +242,28 @@ export const productData = [
         category: 'Son Tint',
         nameProduct: 'Son Tint Blackrouge half n half water glow season 2',
         price: '169,000',
+        brand: "Black Rouge",
+        brandOrigin:'Hàn Quốc',
+        madeIn:'Hàn Quốc',
+        ingredients:'Dimethicone, Dimethicone/Vinyl Dimethicone Crosspolymer,\
+         Trimethylsiloxysilicate, Isononyl Isononanoate,\
+         Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer…',
+         expiryDate: '36 tháng'
         
     },
     {
         id: 17,
         class: 'Lipstick',
         picture: 'public/img/Dearmay California Cherry Velvet Tint.webp',
-        category: 'Son Tint',
+        category: 'Son Kem',
         nameProduct: 'Son Tint Dearmay California Cherry Velvet Tint',
-        price: '155,000'
+        price: '155,000',
+        brand: "Dearmay",
+        brandOrigin:'Hàn Quốc',
+        madeIn:'Hàn Quốc',
+        ingredients:'Water, Phenoxyethanol, Flavor, Octyldodecanol, Glycerin,\
+        Diglycerin, Diphenyl Dimethicone, Hydrogenated Polyisobutene,Trimethylsiloxyphenyl Dimethicone.',
+         expiryDate: '36 tháng'
     },
     {
         id: 18,
@@ -271,7 +271,14 @@ export const productData = [
         picture: 'public/img/Dearmay La Piste Lip Tint.webp',
         category: 'Son Tint',
         nameProduct: 'Son Tint Dearmay La Piste Lip Tint',
-        price: '115,000'
+        price: '115,000',
+        brand: "Dearmay",
+        brandOrigin:'Hàn Quốc',
+        madeIn:'Hàn Quốc',
+        ingredients:'Water, Phenoxyethanol, Flavor, Octyldodecanol, Glycerin,\
+        Diglycerin, Diphenyl Dimethicone, Hydrogenated Polyisobutene,Trimethylsiloxyphenyl Dimethicone.',
+         expiryDate: '36 tháng'
+        
     },
     {
         id: 19,
@@ -279,7 +286,17 @@ export const productData = [
         picture: 'public/img/Lilybyred Glassy Layer Fixing Tint.webp',
         category: 'Son Tint',
         nameProduct: 'Son Tint Lilybyred Glassy Layer Fixing Tint',
-        price: '109,000'
+        price: '109,000',
+        brand: "Lilybyred",
+        brandOrigin:'Hàn Quốc',
+        madeIn:'Hàn Quốc',
+        ingredients:'Dimethicone, Cyclopentasiloxane, Dimethicone Crosspolymer,\
+         Dimethicone/Vinyl Dimethicone Crosspolymer, Polyglyceryl-2 Triisostearate,\
+         Isododecane, Cyclohexasiloxane, Yellow 6 Lake (Ci 15985), 1,2-Hexanediol,\
+         Red 7 Lake (Ci 15850)...',
+         expiryDate: '24 tháng'
+        
+
     },
 
     {
@@ -289,6 +306,14 @@ export const productData = [
         category: 'Son Thỏi',
         nameProduct: 'Son Thỏi Lylibyred Mood Cinema Velvet Epilogue 3.5g',
         price: '109,000',
+        brand: "Lilybyred",
+        brandOrigin:'Hàn Quốc',
+        madeIn:'Hàn Quốc',
+        ingredients:'Dimethicone, Cyclopentasiloxane, Dimethicone Crosspolymer,\
+         Dimethicone/Vinyl Dimethicone Crosspolymer, Polyglyceryl-2 Triisostearate,\
+         Isododecane, Cyclohexasiloxane, Yellow 6 Lake (Ci 15985), 1,2-Hexanediol,\
+         Red 7 Lake (Ci 15850), Disteardimonium Hectorite...',
+         expiryDate: '24 tháng'
 
     },
     {
@@ -298,6 +323,14 @@ export const productData = [
         category: 'Cushion',
         nameProduct: 'Phấn nước GLAMRR Q LONG WEAR DD 13g SPF50+/PA+++ (1 lõi)',
         price: '325,000',
+        brand: "GLAMRR Q",
+        brandOrigin:'Hàn Quốc',
+        madeIn:'Hàn Quốc',
+        ingredients:'Water, Cyclopentasiloxane, Titanium Dioxide (CI 77891), Ethylhexyl Methoxycinnamate,\
+         Butylene Glycol, Ethylhexyl Salicylate, Lauryl PEG-9 Polydimethylsiloxyethyl Dimethicone,\
+         Caprylyl Methi cone, Butylene Glycol Dicaprylate/Dicaprate, Niacinamide, Silica 1,2-Hexanediol,\
+         Iron Oxides (CI 77492)...',
+         expiryDate: '36 tháng'
     },
     {
         id: 22,
@@ -306,6 +339,14 @@ export const productData = [
         category: 'Son Thỏi',
         nameProduct: 'Son Thỏi Maybelline Ultimate',
         price: '339,000',
+        brand: " Maybelline",
+        brandOrigin:'Mỹ',
+        madeIn:'Trung Quốc',
+        ingredients:'Water, Cyclopentasiloxane, Titanium Dioxide (CI 77891), Ethylhexyl Methoxycinnamate,\
+         Butylene Glycol, Ethylhexyl Salicylate, Lauryl PEG-9 Polydimethylsiloxyethyl Dimethicone,\
+         Caprylyl Methi cone, Butylene Glycol Dicaprylate/Dicaprate, Niacinamide, Silica 1,2-Hexanediol,\
+         Iron Oxides (CI 77492)...',
+         expiryDate: '36 tháng'
     },
     {
         id: 23,
@@ -320,7 +361,7 @@ export const productData = [
         class: 'Cleanser',
         picture: "public/img/Nước Tẩy Trang Cây Phỉ Kháng Viêm Derladie Cleansing Water Witch Hazel.jpg",
         category: 'Water Cleanser',
-        nameProduct: "Nước Tẩy Trang Cây Phỉ Kháng Viêm Derladie Cleansing Water Witch Hazel",
+        nameProduct: "Nước Tẩy Trang Cây Phỉ Derladie Cleansing Water Witch Hazel",
         price: '169,000'
     },
     {
@@ -328,7 +369,7 @@ export const productData = [
         class: 'Foundation',
         picture: 'public/img/COLORKEY Foundation.jpg',
         category: 'Foundation',
-        nameProduct: 'Kem nền dạng lỏng lâu trôi COLORKEY',
+        nameProduct: 'Kem nền dạng lỏng lâu trôi Colorkey',
         price: '238,000'
     },
     {

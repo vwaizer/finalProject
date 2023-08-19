@@ -2,267 +2,308 @@
 <html lang="en">
 
 <head>˙
-    <title>Taylor's Version Cosmetics</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/home_style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Taylor's Version Cosmetics</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/css/home_style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="container-fluid">
+  <div class="container-fluid">
 
-        <div class="row">
-            <div class="col-1" style="background-color: #ef3167;"> </div>
-            <div class="col-3" style="background-color: #ef3167; display: flex; align-items: center; padding-left: 50px;"> 
-                <div class="search-bar">
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    </form>
-                </div>
-            </div>
-            <div class="col-1" style="background-color: #ef3167;"> </div>
-            <div class="col-3" style="background-color: #ef3167;">    
-                <div id="logo">
-                <img src="https://i.pinimg.com/originals/a0/36/86/a03686d0ade36f49cd08b34f77140efc.png" alt="Logo" width="100%" height="100%">
-                </div>
-            </div>
-
-            <div class="col-1" style="background-color: #ef3167;"> </div>
-
-            <div class="col-2" style="background-color: #ef3167; display: flex; justify-content: flex-end; align-items: center;">
-                
-                <a href="login.html" class="btn btn-primary" style="background-color: #ae274d; border-color: transparent;">Sign In</a>  
-            </div>
-            <div class="col-1" style="background-color: #ef3167; display: flex; align-items: center;"> 
-                <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><style>svg{fill:#f7f7f8}</style><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
-            </div>
-
+    <div class="row">
+      <div class="col-1" style="background-color: #ef3167;"> </div>
+      <div class="col-3" style="background-color: #ef3167; display: flex; align-items: center; padding-left: 50px;">
+        <div class="search-bar">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
         </div>
-    </div>
-    </div>
-    
-    
-    <div class="topnav" id="myTopnav" style="display: flex; justify-content: space-evenly; font-size:  30px;">
-        <a href="http://127.0.0.1:5500/finalProject/home.html">Trang chủ</a>
-        <a>Giới Thiệu</a>
-
-        <a href="CategoryProduct.html">Sản Phẩm</a>
-
-        <a href="#footer">Liên hệ</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
       </div>
-      
-    
-      <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
+      <div class="col-1" style="background-color: #ef3167;"> </div>
+      <div class="col-3" style="background-color: #ef3167;">
+        <div id="logo">
+          <img src="https://i.pinimg.com/originals/a0/36/86/a03686d0ade36f49cd08b34f77140efc.png" alt="Logo"
+            width="100%" height="100%">
+        </div>
+      </div>
+
+      <div class="col-1" style="background-color: #ef3167;"> </div>
+
+      <div class="col-2"
+        style="background-color: #ef3167; display: flex; justify-content: flex-end; align-items: center;">
+
+        <a id="login" href="login.html" class="btn btn-primary"
+          style="background-color: #ae274d; border-color: transparent;">Sign In</a>
+        <img id="avatar" style="border-radius: 50%; width: 40px;" src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp">
+      </div>
+      <div class="col-1" style="background-color: #ef3167; display: flex; align-items: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+          <style>
+            svg {
+              fill: #f7f7f8
+            }
+          </style>
+          <path
+            d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+        </svg>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+  <div class="topnav" id="myTopnav" style="display: flex; justify-content: space-evenly; font-size:  30px;">
+    <a href="http://127.0.0.1:5500/finalProject/home.html">Trang chủ</a>
+    <a>Giới Thiệu</a>
+
+    <a href="CategoryProduct.html">Sản Phẩm</a>
+
+    <a href="#footer">Liên hệ</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
       }
-      </script>
-      
-    
-     <br>
-    
-    <div class="container-fluid">
-    <div class="row" >
-        <div class="col-1"> </div>
-        <div class="col-3" style=" display: flex; justify-content: center; flex-direction: column; margin-left: 20px;"> 
-        <div style="background-color: #FF779E;font-size: 20px; display: flex; justify-content: center; padding: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px;">Danh mục sản phẩm</div>
-        <a  class="nav-link" id="category" href="#">Son </a>
-        <a  class="nav-link" href="#" id="product">Son kem </a>
-        <a  class="nav-link" href="#" id="product">Son thỏi </a>
-        <a  class="nav-link" href="#" id="product">Son tint </a>
-        <a  class="nav-link" id="category" href="#">Kem nền </a>
-        <a  class="nav-link" href="#" id="product">Foundation </a>
-        <a  class="nav-link" href="#" id="product">Cushion </a>
-        <a  class="nav-link" href="#" id="product">BB Cream </a>
-        <a  class="nav-link" href="#" id="product">CC Cream </a>
-        <a  class="nav-link" id="category" href="#">Tẩy trang </a>
-        <a  class="nav-link" href="#" id="product">Nước tẩy trang </a>
-        <a  class="nav-link" href="#" style="background-color:#fdc5d6 ; font-size: 20px; padding: 5px;border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; padding-left: 30px;">Dầu tẩy trang</a>
-        </div>
-        <div class="col-7">
-            
-            <div class="slideshow-container">
+    }
+  </script>
 
-                <div class="mySlides fade">
-                  <div class="numbertext">1 / 6</div>
-                  <a href="#">
-                  <img src="https://i.pinimg.com/originals/24/9c/09/249c098cd48d3c522b7ca7453b22f107.jpg" style="width:100%">
-                  </a>
-                  <div class="text">espoir be glow</div>
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">2 / 6</div>
-                  <a href="#">
-                  <img src="https://i.pinimg.com/originals/55/27/41/5527414544331bc47c0577ac87e50a79.jpg" style="width:100%">
-                  </a>
-                  <div class="text">lilybyred</div>
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">3 / 6</div>
-                  <a href="#">
-                  <img src="https://i.pinimg.com/originals/a9/58/cc/a958cc599e5d3b0d73906135e7041ca1.jpg" style="width:100%">
-                  </a>
-                  <div class="text">3CE</div>
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">4 / 6</div>
-                  <a href="">
-                  <img src="https://i.pinimg.com/originals/2d/a4/8a/2da48a77d7c4cf25d29dc36fc26dfbea.jpg" style="width:100%">
-                  </a>   
-                  <div class="text">ma:nyo</div>
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">5 / 6</div>
-                  <a href="">
-                  <img src="https://i.pinimg.com/originals/4d/43/b8/4d43b8fddb026a098569c901a96ae372.jpg" style="width:100%">
-                  </a>
-                  <div class="text">FITme</div>
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">6 / 6</div>
-                  <a href="">
-                  <img src="https://i.pinimg.com/originals/b2/b4/2b/b2b42b11ac859fb15603ef893b3ded43.jpg" style="width:100%">
-                  </a>
-                  <div class="text">BYPHASSE</div>
-                </div>
-                </div>
-                
-                <div style="text-align:center">
-                    <span class="dot"></span> 
-                    <span class="dot"></span> 
-                    <span class="dot"></span> 
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                  </div>
-                
-                </div>
-               
 
-                <script src="public/js/slide.js" ></script>
-                
-        </div>
-        
-        <div class="col-1"> </div>
-        </div>
-    </div>
-    </div>
-    
-    <br>
-    <div class="container-fluid">
-        <div class="row">
-        <div class="col-1"> </div>
-        <div class="col-3" style="margin-left: 20px;"> 
-        <img src="https://down-vn.img.susercontent.com/file/vn-50009109-2933d844660ea882e6d3a5e12e0a5284@resize_w1920_nl.webp" width="100%" height="100%" >
-        </div>
-        <div class="col-7" id="tp">
-        
-            
-            
-            <div class="pick">
+  <br>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-1"> </div>
+      <div class="col-3" style=" display: flex; justify-content: center; flex-direction: column; margin-left: 20px;">
+        <div
+          style="background-color: #FF779E;font-size: 20px; display: flex; justify-content: center; padding: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+          Danh mục sản phẩm</div>
+        <a class="nav-link" id="category" href="#">Son </a>
+        <a class="nav-link" href="#" id="product">Son kem </a>
+        <a class="nav-link" href="#" id="product">Son thỏi </a>
+        <a class="nav-link" href="#" id="product">Son tint </a>
+        <a class="nav-link" id="category" href="#">Kem nền </a>
+        <a class="nav-link" href="#" id="product">Foundation </a>
+        <a class="nav-link" href="#" id="product">Cushion </a>
+        <a class="nav-link" href="#" id="product">BB Cream </a>
+        <a class="nav-link" href="#" id="product">CC Cream </a>
+        <a class="nav-link" id="category" href="#">Tẩy trang </a>
+        <a class="nav-link" href="#" id="product">Nước tẩy trang </a>
+        <a class="nav-link" href="#"
+          style="background-color:#fdc5d6 ; font-size: 20px; padding: 5px;border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; padding-left: 30px;">Dầu
+          tẩy trang</a>
+      </div>
+      <div class="col-7">
+
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
             <a href="#">
-            <img src="https://i.pinimg.com/originals/9e/44/52/9e445252a0db27267aba0681fb81d7f6.jpg" width="100%" height="100%" >
+              <img src="https://i.pinimg.com/originals/24/9c/09/249c098cd48d3c522b7ca7453b22f107.jpg"
+                style="width:100%">
             </a>
-            <span>Nước tẩy trang L'Oréal Paris 3 In 1 Micellar Water Duo </span>
-            <span style="font-weight: bold;">159,000 </span>
-            </div>
+            <div class="text">espoir be glow</div>
+          </div>
 
-
-            <div class="pick">
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
             <a href="#">
-            <img src="https://i.pinimg.com/originals/c7/b7/8c/c7b78c381ef87b2920d9d36004ccf4df.jpg" width="100%" height="100%" >
+              <img src="https://i.pinimg.com/originals/55/27/41/5527414544331bc47c0577ac87e50a79.jpg"
+                style="width:100%">
             </a>
-            <span>Son Tint Blackrouge half n half water glow season 2 </span>
-            <span style="font-weight: bold;">169,000đ</span>
-            </div>
+            <div class="text">lilybyred</div>
+          </div>
 
-            <div class="pick">
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
             <a href="#">
-            <img src="https://i.pinimg.com/originals/dd/f5/95/ddf595850b74db323f8f6eec311d153e.jpg" width="100%" height="100%" >
+              <img src="https://i.pinimg.com/originals/a9/58/cc/a958cc599e5d3b0d73906135e7041ca1.jpg"
+                style="width:100%">
             </a>
-            <span>Kem Nền FOCALLURE Kiểm Soát Dầu Che Lỗ Chân Lông 30g  </span>
-            <span style="font-weight: bold;">179,000đ</span>
-            </div>
-       
+            <div class="text">3CE</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <a href="">
+              <img src="https://i.pinimg.com/originals/2d/a4/8a/2da48a77d7c4cf25d29dc36fc26dfbea.jpg"
+                style="width:100%">
+            </a>
+            <div class="text">ma:nyo</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <a href="">
+              <img src="https://i.pinimg.com/originals/4d/43/b8/4d43b8fddb026a098569c901a96ae372.jpg"
+                style="width:100%">
+            </a>
+            <div class="text">FITme</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <a href="">
+              <img src="https://i.pinimg.com/originals/b2/b4/2b/b2b42b11ac859fb15603ef893b3ded43.jpg"
+                style="width:100%">
+            </a>
+            <div class="text">BYPHASSE</div>
+          </div>
         </div>
+
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </div>
-        <div class="col-1"> </div>
-        </div>
+
+      </div>
+
+
+      <script src="public/js/slide.js"></script>
+
     </div>
-    <br>
-    <div id="foot">
+
+    <div class="col-1"> </div>
+  </div>
+  </div>
+  </div>
+
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-1"> </div>
+      <div class="col-3" style="margin-left: 20px;">
+        <img
+          src="https://down-vn.img.susercontent.com/file/vn-50009109-2933d844660ea882e6d3a5e12e0a5284@resize_w1920_nl.webp"
+          width="100%" height="100%">
+      </div>
+      <div class="col-7" id="tp">
+
+
+
+        <div class="pick">
+          <a href="#">
+            <img src="https://i.pinimg.com/originals/9e/44/52/9e445252a0db27267aba0681fb81d7f6.jpg" width="100%"
+              height="100%">
+          </a>
+          <span>Nước tẩy trang L'Oréal Paris 3 In 1 Micellar Water Duo </span>
+          <span style="font-weight: bold;">159,000 </span>
+        </div>
+
+
+        <div class="pick">
+          <a href="#">
+            <img src="https://i.pinimg.com/originals/c7/b7/8c/c7b78c381ef87b2920d9d36004ccf4df.jpg" width="100%"
+              height="100%">
+          </a>
+          <span>Son Tint Blackrouge half n half water glow season 2 </span>
+          <span style="font-weight: bold;">169,000đ</span>
+        </div>
+
+        <div class="pick">
+          <a href="#">
+            <img src="https://i.pinimg.com/originals/dd/f5/95/ddf595850b74db323f8f6eec311d153e.jpg" width="100%"
+              height="100%">
+          </a>
+          <span>Kem Nền FOCALLURE Kiểm Soát Dầu Che Lỗ Chân Lông 30g </span>
+          <span style="font-weight: bold;">179,000đ</span>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-1"> </div>
+  </div>
+  </div>
+  <br>
+  <div id="foot">
     <div class="container-fluid">
-        <div class="row">
+      <div class="row">
 
         <div class="col-1"></div>
         <div class="col-3">
-            <b>TaylorVersion COSMETICS - THIÊN ĐƯỜNG MỸ PHẨM CHÍNH HÃNG TPHCM</b><br>
-            <span style="padding-top: 1vh;">Địa chỉ: </span><br>
+          <b>TaylorVersion COSMETICS - THIÊN ĐƯỜNG MỸ PHẨM CHÍNH HÃNG TPHCM</b><br>
+          <span style="padding-top: 1vh;">Địa chỉ: </span><br>
 
-                <b>CN1: </b><p>49 Trần Hưng Đạo, Phường Tân Thành, Quận Tân Phú</p>
-                <b>CN2: </b><p>B.0012A Tòa Sarica Zone B- Khu Sala, Số 06 đường D9, P. An Lợi Đông, Quận 2, TP. Thủ Đức</p>
-        </div>   
-
-        <div class="col-3"> 
-            <b style="padding: 5.5vh;">CHĂM SÓC KHÁCH HÀNG</b>
-                    <ul style="list-style-type: none;padding-top: 1vh;">
-                        <li>Giới thiệu</li>
-                    <li>Chính sách đổi trả</li>
-                    <li>Chính sách bảo mật</li>
-                    <li>Chính sách thanh toán</li>
-                    <li>Chính sách bảo hành</li>
-                    <li>Hướng dẫn mua hàng</li>
-                    <li>Điều khoản dịch vụ</li>
-                    <li>Vận chuyển</li>
-                    <li>Liên hệ hợp tác</li>
-                    </ul>
+          <b>CN1: </b>
+          <p>49 Trần Hưng Đạo, Phường Tân Thành, Quận Tân Phú</p>
+          <b>CN2: </b>
+          <p>B.0012A Tòa Sarica Zone B- Khu Sala, Số 06 đường D9, P. An Lợi Đông, Quận 2, TP. Thủ Đức</p>
         </div>
 
-        <div class="col-3"> 
-                    <b>GIỜ MỞ CỬA</b>
-                    <br>
-                        <p style="padding-top: 1vh;">Từ 9:00 - 21:30 tất cả các ngày trong tuần (bao gồm cả các ngày lễ, ngày Tết).</p>
-                        <img src="https://theme.hstatic.net/200000135107/1000995416/14/ft_certi_img1.png?v=3007">
+        <div class="col-3">
+          <b style="padding: 4vh;">CHĂM SÓC KHÁCH HÀNG</b>
+          <ul style="list-style-type: none;padding-top: 1vh;">
+            <li>Giới thiệu</li>
+            <li>Chính sách đổi trả</li>
+            <li>Chính sách bảo mật</li>
+            <li>Chính sách thanh toán</li>
+            <li>Chính sách bảo hành</li>
+            <li>Hướng dẫn mua hàng</li>
+            <li>Điều khoản dịch vụ</li>
+            <li>Vận chuyển</li>
+            <li>Liên hệ hợp tác</li>
+          </ul>
         </div>
-                    
-                
-                    
 
-        
+        <div class="col-3">
+          <b>GIỜ MỞ CỬA</b>
+          <br>
+          <p style="padding-top: 1vh;">Từ 9:00 - 21:30 tất cả các ngày trong tuần (bao gồm cả các ngày lễ, ngày Tết).
+          </p>
+          <img src="https://theme.hstatic.net/200000135107/1000995416/14/ft_certi_img1.png?v=3007">
+        </div>
 
-        <div class="col-2"> 
-            <b>KHIẾU NẠI GÓP Ý</b><br>
-                    <p style="padding-top: 1vh;">Email: Cskh@taylorcosmetics.vn</p>
-                    <b>HOTLINE</b>
-                    <p style="padding-top: 1vh;">0769 661 668</p>
+
+
+
+
+
+        <div class="col-2">
+          <b>KHIẾU NẠI GÓP Ý</b><br>
+          <p style="padding-top: 1vh;">Email: Cskh@taylorcosmetics.vn</p>
+          <b>HOTLINE</b>
+          <p style="padding-top: 1vh;">0769 661 668</p>
         </div>
-        </div>
+      </div>
     </div>
 
     <script type="module" src="public/js/basket/home.js"></script>
     <script type="module" src="public/js/basket/categoryProduct.js"></script>
 
-    </div>
-    <footer id="footer" style="height: 40px; padding: 10px;" >COPYRIGHTS © 2021 BY TAYLORVERSION COSMETICS</footer>
-    
+  </div>
+  <footer id="footer" style="height: 40px; padding: 10px;">COPYRIGHTS © 2021 BY TAYLORVERSION COSMETICS</footer>
 
 
 
+  <script>
+
+    if (localStorage.getItem("checkLogin")) {
+      document.getElementById("avatar").style.display = "block"
+      document.getElementById("login").style.display = "none"
+      document.getElementById("user").style.display = "none"
+    }
+    else {
+      document.getElementById("avatar").style.display = "none"
+    }
+  </script>
 </body>
 
 </html>
