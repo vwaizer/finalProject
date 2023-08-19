@@ -43,7 +43,6 @@ listItem.forEach(element => {
         qualityItem.push("id of produce:" + index)
         quality = "1"
     }
-    console.log(qualityItem)
     addItem(nameItem[index], quality, priceItem[index],pictureItemArray[index])
 
     sumTotal = sumItem(quality, priceItem[index])
@@ -54,7 +53,7 @@ listItem.forEach(element => {
 document.getElementById("button").addEventListener("click", function () {
     saleFunction(sumTotal)
 })
-console.log(typeof localStorage.getItem("checkLogin"))
+
 if (localStorage.getItem("checkLogin") == "true") {
     document.getElementById("login").style.display = "none"
     document.getElementById("avatar").style.display = "flex"
